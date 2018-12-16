@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uspeek's Crafting Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/craft.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" id="allcrafts">
+        <h1>Uspeek's Crafting Service</h1>
+        <div class="separator">Prefixes</div>
+        <div id="prefixes">Loading crafts...</div>
+        <div class="separator">Suffixes</div>
+        <div id="suffixes">Loading crafts...</div>
+        <div class="separator">Sockets</div>
+        <div id="sockets">
+            <div class="row">
+                <div class="col-1">Sockets:</div>
+                <div class="col-11 row">
+                    <div class="col-2">2S: 1 Jeweller's</div>
+                    <div class="col-2">3S: 3 Jewellers</div>
+                    <div class="col-2">4S: 10 Jewellers</div>
+                    <div class="col-2">5S: 70 Jewellers</div>
+                    <div class="col-2">6S: N/A</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">Links:</div>
+                <div class="col-11 row">
+                    <div class="col-2">2L: 1 Fusing</div>
+                    <div class="col-2">3L: 3 Fusings</div>
+                    <div class="col-2">4L: 5 Fusings</div>
+                    <div class="col-2">5L: 150 Fusings</div>
+                    <div class="col-2">6L: N/A</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">Colors:</div>
+                <div class="col-11 row">
+                    <div class="col-12">
+                        Replace X/Y with any color (R/G/B)
+                    </div>
+                    <div class="col-4">
+                        <p>1-color:</p>
+                        <ul>
+                            <li>4 Chromatics</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <p>2-color options:</p>
+                        <ul>
+                            <li>2X: 25 Chromatics</li>
+                            <li>1X1Y: 15 Chromatics</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <p>3-color options:</p>
+                        <ul>
+                            <li>Not Available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $.getJSON("crafts.json", function(data){
+        suffixes = [];
+        sockets = [];
+        prefixes = [];
+        meta =[];
+
+        $.each(data["meta"], function(key,val){
+            meta.push("<li>" + key + " - " + val["tier"] + " - " + val["price"] + " - " + val["applies"] + "</li>");
+        });
+        $.each(data["prefixes"], function(key,val){
+            if(val["tier"]==0){val["tier"]='';}
+            prefixes.push('<div class="row craft" title="'+val["price"][0]+' '+ val["price"][1]+ '">' +
+                '                <div class="col-1 row">' +
+                '                      <div class="col-6 tier"><span>'+val["tier"]+'</span></div>' +
+                '                      <div class="col-sm-6 '+ val["price"][1] + ' price">'+val["price"][0]+'</div>' +
+                '                </div>' +
+                '                <div class="col-5">'+key+'</div>\n' +
+                '                <div class="col-6 appl">'+val["applies"]+'</div>\n' +
+                '            </div>');
+        });
+        $.each(data["suffixes"], function(key,val){
+            if(val["tier"]==0){val["tier"]='';}
+            suffixes.push('<div class="row craft" title="'+val["price"][0]+' '+ val["price"][1]+ '">' +
+                '                <div class="col-sm-1 row">' +
+                '                      <div class="col-sm-6 tier"><span>'+val["tier"]+'</span></div>' +
+                '                      <div class="col-sm-6 '+ val["price"][1] + ' price">'+val["price"][0]+'</div>' +
+                '                </div>' +
+                '                <div class="col-sm-5">'+key+'</div>\n' +
+                '                <div class="col-sm-6 appl">'+val["applies"]+'</div>\n' +
+                '            </div>');
+        });
+        $("#prefixes").html(prefixes);
+        $("#suffixes").html(suffixes);
+    });
+</script>
+</body>
+</html>

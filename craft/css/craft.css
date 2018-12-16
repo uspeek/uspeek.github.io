@@ -1,0 +1,100 @@
+@font-face{
+    font-family: POEFont;
+    src: url(/craft/font/Fontin-Regular.otf);
+}
+
+@font-face{
+    font-family: POESC;
+    src: url(/craft/font/Fontin-SmallCaps.otf);
+
+}
+
+body{
+    font-family: POEFont;
+    background: url("https://web.poecdn.com/image/betrayal/topbg.jpg?1541801003000");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fdfdfe;
+}
+
+.appl{
+    font-family: POESC;
+}
+
+.separator{
+    text-align: center;
+    font-size: 18pt;
+    margin-top: 15px;
+}
+
+#allcrafts{
+    background: rgba(0,0,0,0.7);
+    padding: 25px 10px;
+}
+
+#allcrafts div li{
+    list-style-type: none;
+    display: block;
+
+}
+
+#sockets div{
+    margin-bottom: 8px;
+}
+
+.craft:hover{
+    border-bottom: 1px #fff dotted;
+    background: rgba(255,255,255,0.2);
+}
+
+.tier{
+    text-align: center;
+    background: url("/craft/img/rank.png")  no-repeat;
+    background-size: 16px auto;
+    background-position: 11px 2px;
+}
+
+.alch{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToRare.png?scale=1");
+}
+.chaos{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png?scale=1");
+}
+.alt{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png?scale=1");
+}
+.transmut{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.png?scale=1");
+}
+.aug{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToMagic.png?scale=1");
+}
+.exa{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png?scale=1");
+}
+.div{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyModValues.png?scale=1");
+}
+.glass{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyFlaskQuality.png?scale=1");
+}
+.gcp{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyGemQuality.png?scale=1");
+}
+.chance{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeRandomly.png?scale=1");
+}
+.regal{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.png?scale=1");
+}
+.vaal{
+    background: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyVaal.png?scale=1");
+}
+
+.price {
+    text-align: right;
+    background-size: 20px 20px !important;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 5px;
+}

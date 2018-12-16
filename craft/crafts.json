@@ -1,0 +1,898 @@
+{
+  "meta": {
+    "Prefixes Cannot Be Changed (SUFFIX)+":{
+      "price": [2,"exa"]
+    },
+    "Suffixes Cannot Be changed (PREFIX)": {
+      "price": [2,"exa"]
+    },
+    "Can have multiple Crafted Modifiers (SUFFIX)":{
+      "price": [2, "exa"]
+    },
+    "Cannot roll Attack Modifiers (SUFFIX)+":{
+      "price": [1, "exa"]
+    },
+    "Cannot roll Caster Modifiers (SUFFIX)":{
+      "price": [5, "blessed"]
+    }
+  },
+  "prefixes":{
+    "56-70 to Maximum Life": {
+      "tier": 4,
+      "price": [4,"alch" ],
+      "applies": ["shield","helm","body"]
+    },
+    "41-55 to Maximum Life":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["shield","helm","body","gloves","boots","belt","quiver"]
+    },
+    "26-40 to Maximum Life":{
+      "tier": 2,
+      "price": [6, "transmut"],
+      "applies": ["shield","helm","body","gloves","boots","ring","amulet","belt","quiver"]
+    },
+    "45-54 to Maximum Mana":{
+      "tier": 3,
+      "price": [2, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "20-24% Increased Movement Speed":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["boots"]
+    },
+    "45-54% Increased Armour / Evasion Rating / Energy shield":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["shield","helm","body","gloves","boot"]
+    },
+    "60-80 to Armour":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["shield","helm","body"]
+    },
+    "60-80 to Evasion Rating":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["shield","helm","body"]
+    },
+    "35-45 to Energy Shield":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["shield","helm","body"]
+    },
+    "27-34 to Energy Shield":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["shield","helm","body","gloves","boot"]
+    },
+    "45-55% increased Armour and Evasion / Armour and ES / Evasion and ES":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["shield","helm","body","gloves","boot"]
+    },
+    "80-99% Increased Physical Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","2hm","1hr","2hr"]
+    },
+    "67-81% Increased Spell Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm"]
+    },
+    "45-54% Increased Spell Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "11-20% Increased Damage over Time":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","2hm","1hr","2hr"]
+    },
+    "(24-32)% increased Elemental Damage with Attack Skills":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","2hm","1hr","2hr","belt","quiver"]
+    },
+    "(15-23)% increased Elemental Damage with Attack Skills":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","2hm","1hr","2hr","ring","amulet","belt","quiver"]
+    },
+    "67-81% Increased Fire/Cold/Lightning Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm"]
+    },
+    "52-66% Increased Chaos Damage":{
+      "tier": 2,
+      "price": [4,"chance"],
+      "applies": ["2hm"]
+    },
+    "35-44% Increased Chaos Damage":{
+      "tier": 2,
+      "price": [4,"chance"],
+      "applies": ["1hm","1hr"]
+    },
+    "Adds (78-93) to (95-110) Fire Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (52-62) to (63-73) Fire Damge":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr","2hr"]
+    },
+    "Adds (78-93) to (95-110) Cold Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (52-62) to (63-73) Cold Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr","2hr"]
+    },
+    "Adds (9-12) to (150-185) Lightning Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (6-8) to (100-123) Lightning Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr","2hr"]
+    },
+    "Adds (18-24) to (36-42) Physical Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "Adds (13-17) to (26-30) Physical Damage":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "Adds (12-16) to (26-30) Fire Damage to Attacks":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["ring","amulet"]
+    },
+    "Adds (11-15) to (23-27) Cold Damage to Attacks":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["ring","amulet"]
+    },
+    "Adds (1-5) to (41-48) Lightning Damage to Attacks":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["ring","amulet"]
+    },
+    "Adds (5-7) to (8-10) Physical Damage to Attacks":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies": ["ring","amulet"]
+    },
+    "Adds (3-5) to (6-8) Physical Damage to Attacks":{
+      "tier": 2,
+      "price": [6,"transmut"],
+      "applies": ["gloves","ring","amulet","quiver"]
+    },
+    "Adds (11-15) to (23-27) Chaos Damage to Attacks":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies": ["ring","amulet"]
+    },
+    "Adds (6-8) to (14-18) Chaos Damage to Attacks":{
+      "tier": 2,
+      "price": [6,"transmut"],
+      "applies": ["gloves","ring","amulet","quiver"]
+    },
+    "(0.6-0.8)% of Physical Attack Damage Leeched as Life":{
+      "tier": 2,
+      "price": [4, "chance"],
+      "applies": ["amulet"]
+    },
+    "(0.3-0.5)% of Physical Attack Damage Leeched as Life":{
+      "tier": 1,
+      "price": [3, "chance"],
+      "applies": ["gloves","ring","amulet","quiver"]
+    },
+    "Adds (41-55) to (83-96) Fire Damage to Spells":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (31-41) to (61-71) Fire Damage to Spells":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "Adds (38-50) to (75-88) Cold Damage to Spells":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (25-33) to (50-58) Cold Damage to Spells":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "Adds (4-13) to (159-168) Lightning Damage to Spells":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["2hm"]
+    },
+    "Adds (3-9) to (106-112) Lightning Damage to Spells":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(12-17)% faster start of Energy Shield Recharge":{
+      "tier": 1,
+      "price": [2,"regal"],
+      "applies": ["ring"]
+    },
+    "Minions deal (10-20)% increased Damage":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["gloves"]
+    },
+    "Minions deal (39-50)% increased Damage":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "Minions deal (26-33)% increased Damage":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(66-85)% increased Physical Damage<br/>(16-17)% chance to Impale Enemies on Hit with Attacks":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(46-65)% increased Physical Damage<br/>(13-15)% chance to cause Bleeding on Hit":{
+      "tier": 2,
+      "price": [3, "alch"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(66-85)% increased Physical Damage<br/>(16-17)% chance to Blind Enemies on Hit":{
+      "tier": 3,
+      "price": [3,"chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(86-105)% increased Physical Damage<br/>(18-20)% chance to Poison on Hit":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies":["1hm","1hr","2hm","2hr"]
+    },
+    "(65-72)% increased Chaos Damage<br/>Chaos Skills have (18-20)% increased Skill Effect Duration":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "(37-44)% increased Chaos Damage<br/>Chaos Skills have (9-10)% increased Skill Effect Duration":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(56-63)% increased Spell Damage<br/>(16-20)% increased Mana Regeneration Rate":{
+      "tier": 2,
+      "price": [6, "alt"],
+      "applies": ["2hm"]
+    },
+    "(29-36)% increased Spell Damage<br/>(7-9)% increased Mana Regeneration Rate":{
+      "tier": 2,
+      "price": [6, "alt"],
+      "applies": ["1hm","1hr"]
+    },
+    "(16-23)% to Non-Ailment Chaos Damage over Time Multiplier":{
+      "tier": 2,
+      "price": [6, "alt"],
+      "applies": ["2hm","2hr"]
+    },
+    "(9-12)% to Non-Ailment Chaos Damage over Time Multiplier":{
+      "tier": 2,
+      "price": [6, "alt"],
+      "applies": ["1hm","1hr"]
+    },
+    "(8-15)% to Cold Damage over Time Multiplier":{
+      "tier": 1,
+      "price": [4, "transmut"],
+      "applies": ["2hm"]
+    },
+    "(5-8)% to Cold Damage over Time Multiplier":{
+      "tier": 1,
+      "price": [46, "transmut"],
+      "applies": ["1hm","1hr"]
+    },
+    "Attack with this Weapon Penetrate (14-16)% Elemental Resistances":{
+      "tier": 3,
+      "price": [1, "exa"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "Attack with this Weapon Penetrate (11-13)% Elemental Resistances":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "Attack with this Weapon Penetrate (11-13)% Chaos resistance":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(36-40)% increased Armour/Evasion/ES/Combined<br/>(24-28) to Maximum Life":{
+      "tier": 4,
+      "price": [4, "chaos"],
+      "applies": ["shield","helm","body","gloves","boot"]
+    },
+    "(27-33) to maximum Mana<br/>2 Mana Regenerated per second":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["ring","amulet"]
+    },
+    "(34-40) to maximum Mana<br/>5% reduced Mana Cost of Skills":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["ring","amulet"]
+    },
+    "(34-40) to maximum Mana<br/>6% of Damage taken gained as Mana over 4 seconds when Hit":{
+      "tier": 3,
+      "price": [4, "chaos"],
+      "applies": ["ring","amulet"]
+    },
+    "(13-15)% increased Movement Speed<br/>(8-12)% chance to gain Onslaught for 4 seconds on Kill":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["boot"]
+    },
+    "(9-12)% increased Movement Speed<br/>Cannot be Chilled":{
+      "tier": 1,
+      "price": [2, "chance"],
+      "applies": ["boot"]
+    },
+    "(61-110) to Armour<br/>(11-15) to maximum Energy Shield":{
+      "tier": 2,
+      "price": [4, "alt"],
+      "applies":["belt"]
+    },
+    "(111-185) to Evasion Rating<br/>(16-20) to maximum Energy Shield":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies":["belt","quiver"]
+    },
+    "(7-8)% increased effect of Flasks on you":{
+      "tier": 3,
+      "price": [1, "exa"],
+      "applies": ["belt"]
+    },
+    "(5-6)% increased effect of Flasks on you":{
+      "tier": 2,
+      "price": [3, "chaos"],
+      "applies": ["belt"]
+    },
+    "(5-6)% chance for your Flasks to not consume Charges":{
+      "tier": 1,
+      "price": [1, "glass"],
+      "applies": ["belt"]
+    },
+    "33% reduced Flask Charges gained<br/>(11-14)% increased effect of Flasks on you":{
+      "tier": 2,
+      "price": [1,"exa"],
+      "applies": ["belt"]
+    },
+    "20% reduced Flask Charges gained<br/>(8-10)% increased effect of Flasks on you":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies": ["belt"]
+    },
+    "(20-25)% of Physical Damage Converted to Fire/Cold/Lightning Damage":{
+      "tier": 0,
+      "price": [1, "div"],
+      "applies": ["gloves"]
+    },
+    "(751-1000) to Armour during Sould Gain Prevention":{
+      "tier": 2,
+      "price": [2, "vaal"],
+      "applies": ["shield, armour"]
+    },
+    "+1 to Level of Socketed AoE Gems<br/>(8-10)% increased Area of Effect":{
+      "tier": 0,
+      "price": [1, "div"],
+      "applies": ["helm","gloves"]
+    },
+    "+1 to Level of Socketed Projectile Gems<br/>Projectiles Pierce an additional Target":{
+      "tier": 0,
+      "price": [1, "div"],
+      "applies": ["helm","gloves"]
+    },
+    "+1 to Level of Socketed Melee Gems<br/>+1 to Melee Weapon and Unarmed Attack range":{
+      "tier":0,
+      "price": [1, "div"],
+      "applies": ["helm","gloves"]
+    },
+    "(34-40) to maximum Life<br/>(34-40) to maximum Mana":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies": ["helm","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "Adds (9-12) to (13-16) Fire Damage<br/>Adds (9-12) to (13-16) Cold Damage":{
+      "tier": 3,
+      "price": [3,"chaos"],
+      "applies": ["shield","ring"]
+    },
+    "Adds (9-12) to (13-16) Fire Damage<br/>Adds 1 to (19-24) to Lightning Damage":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["shield","ring"]
+    },
+    "Adds (9-12) to (13-16) Cold Damage<br/>Adds 1 to (19-24) Lightning Damage":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["shield","ring"]
+    },
+    "(19-22)% chance to Dodge Attack Hits while Focussed":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["helm","boot"]
+    },
+    "(9-10)% additional Physical Damage Reduction while Focussed":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["helm","boot"]
+    },
+    "(11-13)% increased Damage":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["ring","belt"]
+    },
+    "(-3--2) to Total Mana Cost of Skills":{
+      "tier": 1,
+      "price": [2, "chance"],
+      "applies": ["ring","amulet"]
+    },
+    "(31-36)% increased Damage while Leeching":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["gloves","amulet"]
+    },
+    "(5-6)% to Quality of Socketed Gems":{
+      "tier": 2,
+      "price": [4, "gcp"],
+      "applies": ["1hm","1hr","2hm","2hr","shield"]
+    },
+    "Adds (11-13) to (14-16) Physical Damage<br/>35% chance to cause Bleeding on Hit":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["2hm","2hr"]
+    },
+    "Adds (5-7) to (8-10) Physical Damage<br/>35% chance to cause Bleeding on Hit":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["1hm","1hr"]
+    },
+    "(19-23)% increased Damage during any Flask Effect":{
+      "tier": 3,
+      "price": [2, "alch"],
+      "applies": ["gloves"]
+    },
+    "Gain (11-14)% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 2,
+      "price": [4, "vaal"],
+      "applies": ["2hm","2hr"]
+    },
+    "Gain (6-7)% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 2,
+      "price": [4, "vaal"],
+      "applies": ["1hm","1hr","shield"]
+    },
+    "(1-2)% of Physical Damage from Hits taken as Fire Damage":{
+      "tier": 1,
+      "price": [3, "alt"],
+      "applies": ["helm"]
+    },
+    "(5-8)% increased maximum Life<br/>(5-8)% increased maximum Mana":{
+      "tier": 0,
+      "price": [4, "chaos"],
+      "applies": ["body"]
+    },
+    "(5-7)% Chance to Block Attack Damage":{
+      "tier": 0,
+      "price": [4, "chaos"],
+      "applies": ["body"]
+    },
+    "(8-10)% chance to Dodge Spell Hits":{
+      "tier": 0,
+      "price": [4, "chaos"],
+      "applies": ["body"]
+    },
+    "(25-35)% chance to Avoid Elemental Ailments<br/>(25-35)% chance to Avoid being Stunned":{
+      "tier": 0,
+      "price": [6,"alch"],
+      "applies": ["body"]
+    }
+  },
+  "suffixes":{
+    "(29-35)% to Fire/Cold/Lightning Resistance":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","belt","quiver"]
+    },
+    "(21-28)% to Fire/Cold/Lightning Resistance":{
+      "tier": 2,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(21-25) to Strength/Dexterity/Intelligence":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(17-20)% to Fire and Cold/Cold and Lightning/Fire and Lightning Resistances":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","belt","quiver"]
+    },
+    "(13-16)% to Fire and Cold/Cold and Lightning/Fire and Lightning Resistances":{
+      "tier": 2,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(5-8) to all Elemental Resistances":{
+      "tier": 1,
+      "price": [6, "alt"],
+      "applies": ["ring","amulet"]
+    },
+    "(10-13) to all Attributes":{
+      "tier": 2,
+      "price": [6, "chance"],
+      "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(0.5-0.8)% of Physical Attack Damage Leeched as Life":{
+      "tier": 2,
+      "price": [4,"chance"],
+      "applies": ["2hm","2hr"]
+    },
+    "(0.3-0.5)% of Physical Attack Damage Leeched as Life":{
+      "tier": 1,
+      "price": [3,"chance"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(0.2-0.4)% of Physical Attack Damage Leeched as Life":{
+      "tier": 0,
+      "price": [1,"regal"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(11-15)% increased Attack Speed":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["1hm","2hm"]
+    },
+    "(8-10)% increased Attack Speed":{
+      "tier": 2,
+      "price": [6, "alt"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(7-12)% increased Attack Speed":{
+      "tier": 0,
+      "price": [2,"chaos"],
+      "applies": ["gloves","quiver"]
+    },
+    "(3-5)% increased Attack Speed":{
+      "tier": 0,
+      "price": [2,"alch"],
+      "applies": ["shield","ring"]
+    },
+    "(16-20)% increased Cast Speed":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["2hm"]
+    },
+    "(12-14)% increased Cast Speed":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(6-8)% increased Cast Speed":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["shield","amulet"]
+    },
+    "(13-16)% increased Fire/Cold/Lightning/Chaos Damage":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["1hm","1hr","2hm","2hr","ring","amulet"]
+    },
+    "(121-200) to Accuracy Rating":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "121-150) to Accuracy Rating":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies": ["shield","helm","gloves","ring","amulet","quiver"]
+    },
+    "(13-16)% increased Global Physical Damage":{
+      "tier": 2,
+      "price": [3, "alch"],
+      "applies": ["shield","amulet"]
+    },
+    "(17-19)% increased Critical Strike Chance":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(17-19)% increased Critical Strike Multiplier":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(45-75)% increased Critical Strike Chance for Spells":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["2hm"]
+    },
+    "(30-49)% increased Critical Strike Chance for Spells":{
+      "tier": 1,
+      "price": [6,"alt"],
+      "applies": ["1hm","1hr"]
+    },
+    "(17-21)% increased Global Critical Strike Chance":{
+      "tier": 1,
+      "price": [9,"alt"],
+      "applies": ["amulet","quiver"]
+    },
+    "(5-10)% increased Flask effect duration":{
+      "tier": 1,
+      "price": [2,"glass"],
+      "applies": ["belt"]
+    },
+    "(2-3)% Chance to Block":{
+      "tier": 1,
+      "price": [9,"alt"],
+      "applies": ["shield"]
+    },
+    "(2-3)% Chance to Block Spell Damage":{
+      "tier": 1,
+      "price": [4,"chance"],
+      "applies": ["shield"]
+    },
+    "Minions have (11-15)% increased maximum Life":{
+      "tier": 1,
+      "price": [4,"aug"],
+      "applies": ["helm"]
+    },
+    "(6-8)% increased Trap Throwing/Mine Laying Speed":{
+      "tier": 1,
+      "price": [6,"aug"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(7-9)% chance to deal Double Damage":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "(4-5)% chance to deal Double Damage":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(12-14) to Strength and Dexterity/Dexterity and Intelligence":{
+      "tier": 3,
+      "price": [2,"alch"],
+      "applies": ["shield","helm","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(15-17) to Dexterity and Intelligence/Strength and Intelligence":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies": ["shield","helm","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(5-6)% increased Attack and Cast Speed":{
+      "tier":3,
+      "price": [3,"chaos"],
+      "applies":["amulet"]
+    },
+    "(5-6)% increased Damage per Frenzy/Power/Endurance Charge":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies":["2hm","2hr"]
+    },
+    "(3-4)% increased Damage per Frenzy/Power/Endurance Charge":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies":["1hm","1hr"]
+    },
+    "((11-20)% increased Effect of non-Damaging Ailments on Enemies":{
+      "tier": 1,
+      "price": [2,"chance"],
+      "applies":["boot","amulet"]
+    },
+    "(5-7)% increased Effect of your Curses":{
+      "tier": 1,
+      "price": [2,"chaos"],
+      "applies":["1hm","1hr"]
+    },
+    "(0.4-0.6)% of Life Regenerated per second":{
+      "tier": 1,
+      "price": [2,"chance"],
+      "applies":["shield","amulet"]
+    },
+    "(6-7)% chance to Avoid Elemental Damage from Hits during Soul Gain Prevention":{
+      "tier": 1,
+      "price": [2, "vaal"],
+      "applies":["helm","body"]
+    },
+    "You have Onslaught during Soul Gain Prevention":{
+      "tier": 0,
+      "price": [3,"vaal"],
+      "applies":["gloves","boot"]
+    },
+    "(39-45)% Critical Strike Multiplier while there is a Rare or Unique Enemy Nearby":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies":["2hm","2hr"]
+    },
+    "(26-30)% Critical Strike Multiplier while there is a Rare or Unique Enemy Nearby":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies":["1hm","1hr"]
+    },
+    "(20-22)% increased Attack Speed while there is a Rare or Unique Enemy Nearby":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies":["2hm","2hr"]
+    },
+    "(10-11)% increased Attack Speed while there is a Rare or Unique Enemy Nearby":{
+      "tier": 3,
+      "price": [4,"chaos"],
+      "applies":["1hm","1hr"]
+    },
+    "30 Energy Shield Regenerated per second while a Rare or Unique Enemy is Nearby":{
+      "tier": 2,
+      "price": [4, "alt"],
+      "applies":["body","belt"]
+    },
+    "(11-12)% increased Global Critical Strike Chance<br/>(14-16)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
+      "tier": 2,
+      "price": [4,"alt"],
+      "applies":["gloves","quiver"]
+    },
+    "Shock nearby Enemies for 3 Seconds when you Focus":{
+      "tier": 2,
+      "price": [2, "alch"],
+      "applies":["ring"]
+    },
+    "1% of Evasion Rating is Regenerated as Life per second while Focussed":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies":["body"]
+    },
+    "Recover (26-28)% of Mana and Energy Shield when you Focus":{
+      "tier": 3,
+      "price": [2,"alch"],
+      "applies":["body"]
+    },
+    "(21-28) chance to deal Double Damage while Focussed":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["2hm","2hr"]
+    },
+    "(11-14) chance to deal Double Damage while Focussed":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["1hm","1hr"]
+    },
+    "(121-140)% increased Duration of Ailments you inflict while Focussed":{
+      "tier": 2,
+      "price": [2, "chaos"],
+      "applies": ["helm"]
+    },
+    "You have Vaal Pact while Focussed<br/>10% of Damage Leeched as Life while Focussed":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["amulet"]
+    },
+    "100% increased effect of Fortify on you while Focussed":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["body"]
+    },
+    "Trigger Socketed Spells when you Focus":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["helm"]
+    },
+    "(26-30)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
+      "tier": 1,
+      "price": [2,"chance"],
+      "applies":["helm"]
+    },
+    "(10-11)% increased Global Critical Strike Chance <br/> (15-17)% to Critical Strike Multiplier if you've Shattered an Enemy Recently":{
+      "tier": 2,
+      "price": [4,"alt"],
+      "applies":["ring"]
+    },
+    "(14-16)% increased Fire Damage<br/>(14-16)% increased Lightning Damage":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies": ["ring"]
+    },
+    "(8-10)% increased Attack Speed<br/>(7-12)% to Quality":{
+      "tier": 1,
+      "price": [1,"div"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(15-20) increased Critical Strike Chance<br/>(7-12)% to Quality":{
+      "tier": 1,
+      "price": [2,"chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(51-100) to Accuracy Rating<br/>(10-12)% to Quality":{
+      "tier": 2,
+      "price": [4,"alt"],
+      "applies": ["ring"]
+    },
+    "(13-16)% increased Attack Speed<br/>10% chance to Trigger Level 1 Blood Rage when you Kill an Enemy":{
+      "tier": 2,
+      "price": [1, "exa"],
+      "applies": ["1hm","2hm"]
+    },
+    "(8-10)% increased Attack Speed<br/>10% chance to Trigger Level 1 Blood Rage when you Kill an Enemy":{
+      "tier": 1,
+      "price": [1, "div"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "Trigger a Socketed Spell when you Use a Skill":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(10-12)% to Fire/Lightning/Cold and Chaos Resistances":{
+      "tier": 2,
+      "price": [1,"alch"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
+    "(16-20) to Strength<br/>(11-14)% to Quality":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
+    },
+    "(10-15) to Dexterity<br/>(7-10)% to Quality":{
+      "tier": 1,
+      "price": [6,"armourer"],
+      "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
+    },
+    "(16-20) to Intelligence<br/>(11-14)% to Quality":{
+      "tier": 2,
+      "price": [2,"chaos"],
+      "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
+    },
+    "1% of Life Regenerated per second during any Flask Effect":{
+      "tier": 2,
+      "price": [2,"glass"],
+      "applies":["belt"]
+    },
+    "(7-8)% increased Trap Throwing Speed":{
+      "tier": 1,
+      "price": [3,"aug"],
+      "applies":["amulet","belt"]
+    },
+    "(7-8)% increased Mine Laying Speed":{
+      "tier": 1,
+      "price": [3,"aug"],
+      "applies":["helm","amulet"]
+    },
+    "(9-10)% increased Brand Attachment range":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["gloves","amulet"]
+    }
+  }
+}
