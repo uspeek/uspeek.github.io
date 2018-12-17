@@ -70,14 +70,8 @@
       "applies": ["1hm","1hr"]
     },
     "(21-30)% Increased Damage over Time":{
-      "tier": 1,
+      "tier": 2,
       "price": [9,"alt"],
-      "applies": ["1hm","2hm","1hr","2hr"],
-      "locked":1
-    },
-    "(11-20)% Increased Damage over Time":{
-      "tier": 1,
-      "price": [6,"alt"],
       "applies": ["1hm","2hm","1hr","2hr"]
     },
     "(24-32)% increased Elemental Damage with Attack Skills":{
