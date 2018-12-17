@@ -666,12 +666,7 @@
       "price": [2,"chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(12-14) to Strength and Dexterity/Dexterity and Intelligence":{
-      "tier": 3,
-      "price": [2,"alch"],
-      "applies": ["shield","helm","body","gloves","boot","ring","amulet","belt","quiver"]
-    },
-    "(15-17) to Dexterity and Intelligence/Strength and Intelligence":{
+    "(15-17) to Strength and Dexterity/Dexterity and Intelligence/Strength and Intelligence":{
       "tier": 4,
       "price": [4,"chaos"],
       "applies": ["shield","helm","body","gloves","boot","ring","amulet","belt","quiver"]
@@ -691,9 +686,9 @@
       "price": [3,"chaos"],
       "applies":["1hm","1hr"]
     },
-    "(11-20)% increased Effect of non-Damaging Ailments on Enemies":{
+    "(21-30)% increased Effect of non-Damaging Ailments on Enemies":{
       "tier": 1,
-      "price": [2,"chance"],
+      "price": [2,1"regal"],
       "applies":["boot","amulet"]
     },
     "(5-7)% increased Effect of your Curses":{
@@ -806,6 +801,11 @@
       "price": [4,"chaos"],
       "applies": ["ring"]
     },
+    "(13-16)% increased Attack Speed<br/>(13-18)% to Quality":{
+      "tier": 2,
+      "price": [1,"exa"],
+      "applies": ["1hm","2hm"]
+    },
     "(8-10)% increased Attack Speed<br/>(7-12)% to Quality":{
       "tier": 1,
       "price": [1,"div"],
@@ -841,14 +841,19 @@
       "price": [1,"alch"],
       "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
     },
+    "(13-15)% to Lightning and Chaos Resistances":{
+      "tier": 2,
+      "price": [3,"chaos"],
+      "applies": ["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot","ring","amulet","belt","quiver"]
+    },
     "(16-20) to Strength<br/>(11-14)% to Quality":{
       "tier": 2,
       "price": [2,"alch"],
       "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
     },
-    "(10-15) to Dexterity<br/>(7-10)% to Quality":{
-      "tier": 1,
-      "price": [6,"armourer"],
+    "(16-20) to Dexterity<br/>(11-14)% to Quality":{
+      "tier": 2,
+      "price": [2,"alch"],
       "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
     },
     "(16-20) to Intelligence<br/>(11-14)% to Quality":{
@@ -866,9 +871,9 @@
       "price": [3,"aug"],
       "applies":["amulet","belt"]
     },
-    "(7-8)% increased Mine Laying Speed":{
-      "tier": 1,
-      "price": [3,"aug"],
+    "(11-12)% increased Mine Laying Speed":{
+      "tier": 3,
+      "price": [4,"chaos"],
       "applies":["helm","amulet"]
     },
     "(9-10)% increased Brand Attachment range":{
