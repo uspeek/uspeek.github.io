@@ -862,9 +862,9 @@
       "price": [4,"alt"],
       "applies":["gloves","quiver"]
     },
-    "Shock nearby Enemies for 3 Seconds when you Focus":{
-      "tier": 2,
-      "price": [2, "alch"],
+    "Shock nearby Enemies for 4 Seconds when you Focus":{
+      "tier": 3,
+      "price": [2, "chaos"],
       "applies":["ring"]
     },
     "1% of Evasion Rating is Regenerated as Life per second while Focussed":{
