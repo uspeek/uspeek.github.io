@@ -352,17 +352,17 @@
       "price": [4, "transmut"],
       "applies": ["1hm","1hr"]
     },
-    "Attack with this Weapon Penetrate (14-16)% Elemental Resistances":{
+    "Attacks with this Weapon Penetrate (14-16)% Elemental Resistances":{
       "tier": 3,
       "price": [1, "exa"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "Attack with this Weapon Penetrate (11-13)% Elemental Resistances":{
+    "Attacks with this Weapon Penetrate (11-13)% Elemental Resistances":{
       "tier": 2,
       "price": [2, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "Attack with this Weapon Penetrate (11-13)% Chaos resistance":{
+    "Attacks with this Weapon Penetrate (11-13)% Chaos resistance":{
       "tier": 2,
       "price": [2, "alch"],
       "applies": ["1hm","1hr","2hm","2hr"]
