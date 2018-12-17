@@ -230,29 +230,29 @@
                 acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
                 cn++;
                 $("#b"+section).before(template);
-                //$("#logout").after("<p>"+icons+"</p>");
             });
         });
     });
-    console.log(acr);
     $("#jumpm a").click(function(){
         let target = $(this).data('scroll');
         $('html, body').animate({
             scrollTop: $('#'+target).offset().top -150
         },500);
     });
-    $("#searchform").autocomplete({
+    $("#searchform").click(function (){this.select();}).autocomplete({
         source: acr,
         minLength: 3,
         focus: function(event,ui){
             return false;
         },
         select: function(event,ui) {
-            let target = ui.item.value;
             $('html, body').animate({
                 scrollTop: $('#' + ui.item.value).offset().top - 150
             }, 500);
-            $("#searchform").val('').value('');
+            setTimeout(function(){
+                $('#' + ui.item.value+'').animate({backgroundColor:"#ccc"},500).animate({backgroundColor:"none"},500);
+            },500);
+            $("#searchform").value('').val('');
             return false;
         }
     });
