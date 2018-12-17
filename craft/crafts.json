@@ -688,7 +688,7 @@
     },
     "(21-30)% increased Effect of non-Damaging Ailments on Enemies":{
       "tier": 1,
-      "price": [2,1"regal"],
+      "price": [2,"regal"],
       "applies":["boot","amulet"]
     },
     "(5-7)% increased Effect of your Curses":{
