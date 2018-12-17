@@ -53,10 +53,10 @@
         </div>
     </nav>
     <div class="container" id="allcrafts">
-        <table class="table">
+        <table class="table table-sm">
             <thead>
             <tr>
-                <th scope="col">Price</th>
+                <th scope="col">Price&nbsp;&nbsp;</th>
                 <th scope="col">Craft and rank</th>
                 <th scope="col">Applies to</th>
             </tr>
@@ -85,13 +85,13 @@
                     <td>Can have Multiple Crafted Modifiers</td>
                     <td>Everything, Suffix</td>
                 </tr>
-                <tr class="table-danger">
+                <tr class="table-warning">
                     <td>2 <span class="price exa"></span></td>
                     <td>Prefixes Cannot Be Changed</td>
-                    <td>Everything, Suffix, <strong>NOT AVAILABLE</strong> (bugged)</td>
+                    <td>Everything, Suffix, <strong>Not available</strong> (bugged)</td>
                 </tr>
                 <tr id="prefix">
-                    <td class="separator" colspan="3">Prefixes</td>
+                    <td class="separator" colspan="3">Prefixes - Default</td>
                 </tr>
 <!--                <tr>
                     <td>4 <span class="price alch"></span></td>
@@ -119,7 +119,7 @@
                 </tr>
                 <tr id="bprefixveil"></tr>
                 <tr id="suffix">
-                    <td class="separator" colspan="3">Suffixes</td>
+                    <td class="separator" colspan="3">Suffixes - Default</td>
                 </tr>
                 <tr id="bsuffix"></tr>
                 <tr id="suffixveil">
@@ -194,15 +194,20 @@
         $.each(data, function(section,crafts){
             let crc=0;
             $.each(crafts, function(cr,att){
-                let icons="", template,tier;
+                let icons="", template,tier,locked,warning='';
                 crc+=1;
-                $.each(att['applies'],function(k,v){
-                    icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
-                });
+                if(att['applies'][0]=="!flasks"){
+                    icons="Everything except Flasks"
+                }else{
+                    $.each(att['applies'],function(k,v){
+                        icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
+                    });
+                }
                 if(att['tier']==0){tier='';}else{tier=att['tier'];}
-                template='<tr id="'+section+crc+'">' +
+                if(att['locked']==1){locked='table-warning';warning=' <i>(Not available)</i>';}
+                template='<tr id="'+section+crc+'" class="'+locked+'">' +
                     '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
-                    '<td><span class="rank">'+tier+'</span>'+cr+'</td>'+
+                    '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
                     '<td>'+icons+'</td></tr>';
                 acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
                 cn++;
