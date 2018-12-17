@@ -119,3 +119,7 @@ body{
 .blessed{
     background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyImplicitMod.png?scale=1");
 }
+
+nav {
+    z-index: 1 !important;
+}

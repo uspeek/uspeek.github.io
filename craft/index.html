@@ -18,23 +18,23 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container collapse navbar-collapse navbar">
             <a class="navbar-brand" href="#">Uspeek's Crafting Service</a>
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#meta">Metacrafts</a>
-                        <a class="dropdown-item" href="#prefix">Prefixes - Default</a>
-                        <a class="dropdown-item" href="#prefixveil">Prefixes - Veiled</a>
-                        <a class="dropdown-item" href="#suffix">Suffixes - Default</a>
-                        <a class="dropdown-item" href="#suffixveil">Suffixes - Veiled</a>
-                        <a class="dropdown-item" href="#sockets">Sockets</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="jumpm">
+                        <a class="dropdown-item" data-scroll="meta" href="#">Metacrafts</a>
+                        <a class="dropdown-item" data-scroll="prefix" href="#">Prefixes - Default</a>
+                        <a class="dropdown-item" data-scroll="prefixveil" href="#">Prefixes - Veiled</a>
+                        <a class="dropdown-item" data-scroll="suffix" href="#">Suffixes - Default</a>
+                        <a class="dropdown-item" data-scroll="suffixveil" href="#">Suffixes - Veiled</a>
+                        <a class="dropdown-item" data-scroll="sockets" href="#">Sockets</a>
                     </div>
                 </li>
-            </ul><!--
+            </ul>
             <form class="form-inline mr-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search mods" aria-label="Search">
+                <input class="form-control mr-sm-2" id="searchform" type="search" placeholder="Search mods" aria-label="Search">
             </form>
-            <ul class="navbar-nav" id="classfilter">
+            <!--<ul class="navbar-nav" id="classfilter">
                 <li class="nav-item filtericon c1hm" data-filter="1hm"></li>
                 <li class="nav-item filtericon c1hr" data-filter="1hr"></li>
                 <li class="nav-item filtericon c2hm" data-filter="2hm"></li>
@@ -123,7 +123,7 @@
                 </tr>
                 <tr id="bsuffix"></tr>
                 <tr id="suffixveil">
-                    <td class="separator" colspan="3">Suffiexs - Veiled</td>
+                    <td class="separator" colspan="3">Suffixes - Veiled</td>
                 </tr>
                 <tr id="bsuffixveil"></tr>
                 <tr id="sockets">
@@ -169,7 +169,7 @@
         <div id="logout"></div>
     </div>
 <script>
-    var lang={
+    let lang={
         "1hm":"One-handed melee",
         "1hr":"One-handed ranged",
         "2hm":"Two-handed melee",
@@ -184,23 +184,54 @@
         "belt":"Belt",
         "flask":"Flask",
         "quiver":"Quiver"
-    }
+    }, lcat={
+        "prefix":"Prefixes",
+        "prefixveil":"Veiled Prefixes",
+        "suffix":"Suffixes",
+        "suffixveil":"Veiled Suffixes"
+    },acr=[],cn=0;
     $.getJSON("crafts.json", function(data){
         $.each(data, function(section,crafts){
+            let crc=0;
             $.each(crafts, function(cr,att){
                 let icons="", template,tier;
+                crc+=1;
                 $.each(att['applies'],function(k,v){
                     icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
                 });
                 if(att['tier']==0){tier='';}else{tier=att['tier'];}
-                template='<tr>' +
+                template='<tr id="'+section+crc+'">' +
                     '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
                     '<td><span class="rank">'+tier+'</span>'+cr+'</td>'+
                     '<td>'+icons+'</td></tr>';
+                acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
+                cn++;
                 $("#b"+section).before(template);
                 //$("#logout").after("<p>"+icons+"</p>");
             });
         });
+    });
+    console.log(acr);
+    $("#jumpm a").click(function(){
+        let target = $(this).data('scroll');
+        $('html, body').animate({
+            scrollTop: $('#'+target).offset().top -150
+        },500);
+    });
+    $("#searchform").autocomplete({
+        source: acr,
+        minLength: 3,
+        focus: function(event,ui){
+            return false;
+        },
+        select: function(event,ui) {
+            let target = ui.item.value;
+            $('html, body').animate({
+                scrollTop: $('#' + ui.item.value).offset().top - 150
+            }, 500);
+            $("#searchform").val('').value('');
+            return false;
+        }
     });
 </script>
 </body>

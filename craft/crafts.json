@@ -691,7 +691,7 @@
       "price": [3,"chaos"],
       "applies":["1hm","1hr"]
     },
-    "((11-20)% increased Effect of non-Damaging Ailments on Enemies":{
+    "(11-20)% increased Effect of non-Damaging Ailments on Enemies":{
       "tier": 1,
       "price": [2,"chance"],
       "applies":["boot","amulet"]
