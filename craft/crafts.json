@@ -289,7 +289,7 @@
     },
     "(5-8)% to Cold Damage over Time Multiplier":{
       "tier": 1,
-      "price": [46, "transmut"],
+      "price": [4, "transmut"],
       "applies": ["1hm","1hr"]
     },
     "Attack with this Weapon Penetrate (14-16)% Elemental Resistances":{
