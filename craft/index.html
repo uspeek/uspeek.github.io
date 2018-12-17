@@ -4,107 +4,203 @@
     <title>Uspeek's Crafting Service</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="./css/jquery-ui.min.css">
-    <link rel="stylesheet" href="./css/craft.css">
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/jquery-ui.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="craft.css">
+    <link rel="stylesheet" href="bootstrap.min.css.css">
 </head>
 <body>
-    <div class="container" id="allcrafts">
-        <h1>Uspeek's Crafting Service</h1>
-        <div class="separator">Prefixes</div>
-        <div id="prefixes">Loading crafts...</div>
-        <div class="separator">Suffixes</div>
-        <div id="suffixes">Loading crafts...</div>
-        <div class="separator">Sockets</div>
-        <div id="sockets">
-            <div class="row">
-                <div class="col-1">Sockets:</div>
-                <div class="col-11 row">
-                    <div class="col-2">2S: 1 Jeweller's</div>
-                    <div class="col-2">3S: 3 Jewellers</div>
-                    <div class="col-2">4S: 10 Jewellers</div>
-                    <div class="col-2">5S: 70 Jewellers</div>
-                    <div class="col-2">6S: N/A</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">Links:</div>
-                <div class="col-11 row">
-                    <div class="col-2">2L: 1 Fusing</div>
-                    <div class="col-2">3L: 3 Fusings</div>
-                    <div class="col-2">4L: 5 Fusings</div>
-                    <div class="col-2">5L: 150 Fusings</div>
-                    <div class="col-2">6L: N/A</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">Colors:</div>
-                <div class="col-11 row">
-                    <div class="col-12">
-                        Replace X/Y with any color (R/G/B)
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container collapse navbar-collapse navbar">
+            <a class="navbar-brand" href="#">Uspeek's Crafting Service</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#meta">Metacrafts</a>
+                        <a class="dropdown-item" href="#prefix">Prefixes - Default</a>
+                        <a class="dropdown-item" href="#prefixveil">Prefixes - Veiled</a>
+                        <a class="dropdown-item" href="#suffix">Suffixes - Default</a>
+                        <a class="dropdown-item" href="#suffixveil">Suffixes - Veiled</a>
+                        <a class="dropdown-item" href="#sockets">Sockets</a>
                     </div>
-                    <div class="col-4">
-                        <p>1-color:</p>
-                        <ul>
-                            <li>4 Chromatics</li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <p>2-color options:</p>
-                        <ul>
-                            <li>2X: 25 Chromatics</li>
-                            <li>1X1Y: 15 Chromatics</li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <p>3-color options:</p>
-                        <ul>
-                            <li>Not Available</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul><!--
+            <form class="form-inline mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search mods" aria-label="Search">
+            </form>
+            <ul class="navbar-nav" id="classfilter">
+                <li class="nav-item filtericon c1hm" data-filter="1hm"></li>
+                <li class="nav-item filtericon c1hr" data-filter="1hr"></li>
+                <li class="nav-item filtericon c2hm" data-filter="2hm"></li>
+                <li class="nav-item filtericon c2hr" data-filter="2hr"></li>
+                <li class="nav-item filtericon cshield" data-filter="shield"></li>
+                <li class="nav-item filtericon chelm" data-filter="helm"></li>
+                <li class="nav-item filtericon cbody" data-filter="body"></li>
+                <li class="nav-item filtericon cgloves" data-filter="gloves"></li>
+                <li class="nav-item filtericon cboot" data-filter="boot"></li>
+                <li class="nav-item filtericon cring" data-filter="ring"></li>
+                <li class="nav-item filtericon camulet" data-filter="amulet"></li>
+                <li class="nav-item filtericon cbelt" data-filter="belt"></li>
+                <li class="nav-item filtericon cflask" data-filter="flask"></li>
+                <li class="nav-item filtericon cquiver" data-filter="quiver"></li>
+            </ul>-->
         </div>
+    </nav>
+    <div class="container" id="allcrafts">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Price</th>
+                <th scope="col">Craft and rank</th>
+                <th scope="col">Applies to</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr id="meta">
+                    <td class="separator" colspan="3">Metacrafting</td>
+                </tr>
+                <tr>
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Suffixes Cannot Be Changed</td>
+                    <td>Everything, Prefix</td>
+                </tr>
+                <tr>
+                    <td>1 <span class="price exa"></span></td>
+                    <td>Cannot roll Attack Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr>
+                    <td>5 <span class="price blessed"></span></td>
+                    <td>Cannot roll Caster Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr>
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Can have Multiple Crafted Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Prefixes Cannot Be Changed</td>
+                    <td>Everything, Suffix, <strong>NOT AVAILABLE</strong> (bugged)</td>
+                </tr>
+                <tr id="prefix">
+                    <td class="separator" colspan="3">Prefixes</td>
+                </tr>
+<!--                <tr>
+                    <td>4 <span class="price alch"></span></td>
+                    <td><span class="rank">1</span>Attack with this Weapon Penetrate (14-16)% Elemental Resistances</td>
+                    <td><ul class="applies">
+                        <li class="filtericon c1hm" data-filter="1hm"></li>
+                        <li class="filtericon c1hr" data-filter="1hr"></li>
+                        <li class="filtericon c2hm" data-filter="2hm"></li>
+                        <li class="filtericon c2hr" data-filter="2hr"></li>
+                        <li class="filtericon cshield" data-filter="shield"></li>
+                        <li class="filtericon chelm" data-filter="helm"></li>
+                        <li class="filtericon cbody" data-filter="body"></li>
+                        <li class="filtericon cgloves" data-filter="gloves"></li>
+                        <li class="filtericon cboot" data-filter="boot"></li>
+                        <li class="filtericon cring" data-filter="ring"></li>
+                        <li class="filtericon camulet" data-filter="amulet"></li>
+                        <li class="filtericon cbelt" data-filter="belt"></li>
+                        <li class="filtericon cflask" data-filter="flask"></li>
+                        <li class="filtericon cquiver" data-filter="quiver"></li>
+                    </ul></td>
+                </tr>-->
+                <tr id="bprefix"></tr>
+                <tr id="prefixveil">
+                    <td class="separator" colspan="3">Prefixes - Veiled</td>
+                </tr>
+                <tr id="bprefixveil"></tr>
+                <tr id="suffix">
+                    <td class="separator" colspan="3">Suffixes</td>
+                </tr>
+                <tr id="bsuffix"></tr>
+                <tr id="suffixveil">
+                    <td class="separator" colspan="3">Suffiexs - Veiled</td>
+                </tr>
+                <tr id="bsuffixveil"></tr>
+                <tr id="sockets">
+                    <td class="separator" colspan="3">Sockets, Links and colors</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="row">
+                            <div class="col-3">
+                                <p>Sockets:</p>
+                                <ul>
+                                    <li>2S: 1 Jeweller's</li>
+                                    <li>3S: 3 Jewellers</li>
+                                    <li>4S: 10 Jewellers</li>
+                                    <li>5S: 70 Jewellers</li>
+                                    <li>6S: Not available</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <p>Links:</p>
+                                <ul>
+                                    <li>2L: 1 Fusing</li>
+                                    <li>3L: 3 Fusings</li>
+                                    <li>4L: 5 Fusings</li>
+                                    <li>5L: 150 Fusings</li>
+                                    <li>6L: Not available</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <p>Colours (X and Y as any of Red, Greed or Blue):</p>
+                                <ul>
+                                    <li>1X: 4 Chromatics</li>
+                                    <li>2X: 25 Chromatics</li>
+                                    <li>1X1Y: 15 Chromatics</li>
+                                    <li>3-color options aren't available yet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="logout"></div>
     </div>
 <script>
+    var lang={
+        "1hm":"One-handed melee",
+        "1hr":"One-handed ranged",
+        "2hm":"Two-handed melee",
+        "2hr":"Two-handed ranged",
+        "shield":"Shield",
+        "helm":"Helmet",
+        "body":"Body armour",
+        "gloves":"Gloves",
+        "boot":"Boots",
+        "ring":"Ring",
+        "amulet":"Amulet",
+        "belt":"Belt",
+        "flask":"Flask",
+        "quiver":"Quiver"
+    }
     $.getJSON("crafts.json", function(data){
-        suffixes = [];
-        sockets = [];
-        prefixes = [];
-        meta =[];
-
-        $.each(data["meta"], function(key,val){
-            meta.push("<li>" + key + " - " + val["tier"] + " - " + val["price"] + " - " + val["applies"] + "</li>");
+        $.each(data, function(section,crafts){
+            $.each(crafts, function(cr,att){
+                let icons="", template,tier;
+                $.each(att['applies'],function(k,v){
+                    icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
+                });
+                if(att['tier']==0){tier='';}else{tier=att['tier'];}
+                template='<tr>' +
+                    '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
+                    '<td><span class="rank">'+tier+'</span>'+cr+'</td>'+
+                    '<td>'+icons+'</td></tr>';
+                $("#b"+section).before(template);
+                //$("#logout").after("<p>"+icons+"</p>");
+            });
         });
-        $.each(data["prefixes"], function(key,val){
-            if(val["tier"]==0){val["tier"]='';}
-            prefixes.push('<div class="row craft" title="'+val["price"][0]+' '+ val["price"][1]+ '">' +
-                '                <div class="col-1 row">' +
-                '                      <div class="col-6 tier"><span>'+val["tier"]+'</span></div>' +
-                '                      <div class="col-sm-6 '+ val["price"][1] + ' price">'+val["price"][0]+'</div>' +
-                '                </div>' +
-                '                <div class="col-5">'+key+'</div>\n' +
-                '                <div class="col-6 appl">'+val["applies"]+'</div>\n' +
-                '            </div>');
-        });
-        $.each(data["suffixes"], function(key,val){
-            if(val["tier"]==0){val["tier"]='';}
-            suffixes.push('<div class="row craft" title="'+val["price"][0]+' '+ val["price"][1]+ '">' +
-                '                <div class="col-sm-1 row">' +
-                '                      <div class="col-sm-6 tier"><span>'+val["tier"]+'</span></div>' +
-                '                      <div class="col-sm-6 '+ val["price"][1] + ' price">'+val["price"][0]+'</div>' +
-                '                </div>' +
-                '                <div class="col-sm-5">'+key+'</div>\n' +
-                '                <div class="col-sm-6 appl">'+val["applies"]+'</div>\n' +
-                '            </div>');
-        });
-        $("#prefixes").html(prefixes);
-        $("#suffixes").html(suffixes);
     });
 </script>
 </body>

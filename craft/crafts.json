@@ -1,36 +1,14 @@
 {
-  "meta": {
-    "Prefixes Cannot Be Changed (SUFFIX)+":{
-      "price": [2,"exa"]
-    },
-    "Suffixes Cannot Be changed (PREFIX)": {
-      "price": [2,"exa"]
-    },
-    "Can have multiple Crafted Modifiers (SUFFIX)":{
-      "price": [2, "exa"]
-    },
-    "Cannot roll Attack Modifiers (SUFFIX)+":{
-      "price": [1, "exa"]
-    },
-    "Cannot roll Caster Modifiers (SUFFIX)":{
-      "price": [5, "blessed"]
-    }
-  },
-  "prefixes":{
+  "prefix":{
     "56-70 to Maximum Life": {
       "tier": 4,
       "price": [4,"alch" ],
-      "applies": ["shield","helm","body"]
+      "applies": ["shield","helm","body","gloves","boot"]
     },
     "41-55 to Maximum Life":{
       "tier": 3,
       "price": [2, "alch"],
-      "applies": ["shield","helm","body","gloves","boots","belt","quiver"]
-    },
-    "26-40 to Maximum Life":{
-      "tier": 2,
-      "price": [6, "transmut"],
-      "applies": ["shield","helm","body","gloves","boots","ring","amulet","belt","quiver"]
+      "applies": ["shield","helm","body","gloves","boot","ring","amulet","belt","quiver"]
     },
     "45-54 to Maximum Mana":{
       "tier": 3,
@@ -40,7 +18,7 @@
     "20-24% Increased Movement Speed":{
       "tier": 3,
       "price": [4, "chaos"],
-      "applies": ["boots"]
+      "applies": ["boot"]
     },
     "45-54% Increased Armour / Evasion Rating / Energy shield":{
       "tier": 2,
@@ -251,7 +229,9 @@
       "tier": 3,
       "price": [3, "chaos"],
       "applies": ["1hm","1hr"]
-    },
+    }
+  },
+  "prefixveil":{
     "(66-85)% increased Physical Damage<br/>(16-17)% chance to Impale Enemies on Hit with Attacks":{
       "tier": 3,
       "price": [3, "chaos"],
@@ -518,7 +498,7 @@
       "applies": ["body"]
     }
   },
-  "suffixes":{
+  "suffix":{
     "(29-35)% to Fire/Cold/Lightning Resistance":{
       "tier": 3,
       "price": [3, "chaos"],
@@ -673,7 +653,9 @@
       "tier": 1,
       "price": [6,"aug"],
       "applies": ["1hm","1hr","2hm","2hr"]
-    },
+    }
+  },
+  "suffixveil":{
     "(7-9)% chance to deal Double Damage":{
       "tier": 2,
       "price": [2,"chaos"],
