@@ -53,6 +53,24 @@
         </div>
     </nav>
     <div class="container" id="allcrafts">
+        <div class="form-group row mt-2">
+            <div class="col-2">Fees:</div>
+            <div class="col-10">none; only materials to craft are required</div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">Forum thread:</div>
+            <div class="col-10">to be created</div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">IGNs this league:</div>
+            <div class="col-10">@AlexanderExaltow and @YaHz</div>
+        </div>
+        <div class="form-group row">
+            <label for="qcp" class="col-2 col-form-label">Quick copy-paste PM: </label>
+            <div class="col-10">
+                <input class="form-control" type="text" value="@Uspeek Hi, I need crafting service." readonly id="qcp" data-toggle="tooltip" title="Copied!" data-placement="top">
+            </div>
+        </div>
         <table class="table table-sm">
             <thead>
             <tr>
@@ -88,7 +106,7 @@
                 <tr class="table-warning">
                     <td>2 <span class="price exa"></span></td>
                     <td>Prefixes Cannot Be Changed</td>
-                    <td>Everything, Suffix, <strong>Not available</strong> (bugged)</td>
+                    <td>Everything, Suffix, <strong>Will be available after 3.5.0d deploy</strong></td>
                 </tr>
                 <tr id="prefix">
                     <td class="separator" colspan="3">Prefixes - Default</td>
@@ -204,7 +222,7 @@
                     });
                 }
                 if(att['tier']==0){tier='';}else{tier=att['tier'];}
-                if(att['locked']==1){locked='table-warning';warning=' <i>(Not available)</i>';}
+                if(att['locked']==1){locked='table-warning';warning=' <i>(Will be available soon™)</i>';}
                 template='<tr id="'+section+crc+'" class="'+locked+'">' +
                     '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
                     '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
@@ -237,6 +255,14 @@
             $("#searchform").val('').value('');
             return false;
         }
+    });
+    $("#qcp").click(function(){
+       this.select();
+       document.execCommand("copy");
+       $(this).tooltip('show');
+       setTimeout(function(){
+           $("#qcp").tooltip('dispose');
+       },3000);
     });
 </script>
 </body>
