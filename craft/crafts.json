@@ -4,7 +4,6 @@
       "tier": 5,
       "price": [4,"chaos"],
       "applies":["body"],
-      "locked":1
     },
     "+(56-70) to Maximum Life": {
       "tier": 4,
@@ -39,8 +38,7 @@
     "(100-129)% Increased Physical Damage":{
       "tier": 4,
       "price": [1,"exa"],
-      "applies": ["1hm","2hm","1hr","2hr"],
-      "locked": 1
+      "applies": ["1hm","2hm","1hr","2hr"]
     },
     "(80-99)% Increased Physical Damage":{
       "tier": 3,
