@@ -118,12 +118,6 @@
       "tier": 3,
       "price": [2,"chaos"],
       "applies": ["shield","helm","body","gloves","boot"],
-      "locked": 1
-    },
-    "(45-55)% Increased Armour / Evasion Rating / Energy shield / Any 2 combined":{
-      "tier": 2,
-      "price": [1,"alch"],
-      "applies": ["shield","helm","body","gloves","boot"]
     },
     "(180-250) to Armour / Evasion Rating":{
       "tier": 3,
@@ -139,7 +133,6 @@
       "tier":3,
       "price": [2, "chaos"],
       "applies": ["shield","body"],
-      "locked":1
     },
     "(35-45) to maximum Energy Shield":{
       "tier": 2,
