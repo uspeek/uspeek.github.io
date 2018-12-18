@@ -52,25 +52,30 @@
             </ul>-->
         </div>
     </nav>
-    <div class="container" id="allcrafts">
-        <div class="form-group row mt-2">
-            <div class="col-2">Fees:</div>
-            <div class="col-10">none; only materials to craft are required</div>
-        </div>
-        <div class="form-group row">
-            <div class="col-2">Forum thread:</div>
-            <div class="col-10">to be created</div>
-        </div>
-        <div class="form-group row">
-            <div class="col-2">IGNs this league:</div>
-            <div class="col-10">@AlexanderExaltow and @YaHz</div>
-        </div>
-        <div class="form-group row">
-            <label for="qcp" class="col-2 col-form-label">Quick copy-paste PM: </label>
-            <div class="col-10">
-                <input class="form-control" type="text" value="@Uspeek Hi, I need crafting service." readonly id="qcp" data-toggle="tooltip" title="Copied!" data-placement="top">
+    <div class="container-fluid" id="hideout">
+        <div class="container">
+            <div class="form-group row mt-2">
+                <div class="col-2">Fees:</div>
+                <div class="col-10">none; only materials to craft are required</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">Forum thread:</div>
+                <div class="col-10">to be created</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">IGNs this league:</div>
+                <div class="col-10">@AlexanderExaltow and @YaHz</div>
+            </div>
+            <div class="form-group row">
+                <label for="qcp" class="col-2 col-form-label">Quick copy-paste PM: </label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="@Uspeek Hi, I need crafting service." readonly id="qcp" data-toggle="tooltip" title="Copied!" data-placement="top">
+                </div>
             </div>
         </div>
+        <span class="oi oi-arrow-thick-bottom" id="ho"></span>
+    </div>
+    <div class="container">
         <table class="table table-sm">
             <thead>
             <tr>
@@ -226,7 +231,7 @@
                 template='<tr id="'+section+crc+'" class="'+locked+'">' +
                     '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
                     '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
-                    '<td>'+icons+'</td></tr>';
+                    '<td class="applies">'+icons+'</td></tr>';
                 acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
                 cn++;
                 $("#b"+section).before(template);
@@ -264,6 +269,15 @@
            $("#qcp").tooltip('dispose');
        },3000);
     });
+    $("#ho").click(function(){
+        if($(this).hasClass("oi-arrow-thick-bottom")){
+            $(this).removeClass("oi-arrow-thick-bottom").addClass("oi-arrow-thick-top");
+            $("#hideout").animate({height:"700px"},500);
+        }else{
+            $(this).removeClass("oi-arrow-thick-top").addClass("oi-arrow-thick-bottom");
+            $("#hideout").animate({height:"240px"},500);
+        }
+    })
 </script>
 </body>
 </html>

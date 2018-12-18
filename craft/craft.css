@@ -12,6 +12,27 @@
 body{
     font-family: POEFont;
 }
+
+#hideout{
+    background: url("./img/hideout.jpg") center no-repeat;
+    height: 240px;
+    padding-top: 15px;
+}
+
+#hideout .container{
+    background: rgba(255,255,255,0.8);
+    padding: 10px 20px;
+}
+
+#ho{
+    position: relative;
+    bottom: 5px;
+    left: 50%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+    cursor: pointer;
+}
+
 .appl{
     font-family: POESC;
 }
@@ -48,15 +69,6 @@ body{
     margin-top: 15px;
 }
 
-#allcrafts div li{
-    list-style-type: none;
-    display: block;
-}
-
-#sockets div{
-    margin-bottom: 8px;
-}
-
 .rank{
     float: right;
     background: url("./img/rank.png") no-repeat;
@@ -66,10 +78,6 @@ body{
     height: 24px;
     text-align: center;
     color: #fff;
-}
-
-.tier{
-    background: url("./img/rank.png") no-repeat;
 }
 
 .price {
