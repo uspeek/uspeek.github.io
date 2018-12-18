@@ -815,7 +815,7 @@
     "(5-7)% increased Effect of your Curses":{
       "tier": 1,
       "price": [2,"chaos"],
-      "applies":["1hm","1hr"]
+      "applies":["shield"]
     },
     "(0.4-0.6)% of Life Regenerated per second":{
       "tier": 1,

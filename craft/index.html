@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <span class="oi oi-arrow-thick-bottom" id="ho"></span>
+        <span class="oi oi-arrow-thick-bottom" id="ho" data-toggle="tooltip" data-placement="right" title="<img src='./img/hoad.png' />"></span>
     </div>
     <div class="container">
         <table class="table table-sm">
@@ -278,6 +278,12 @@
             $("#hideout").animate({height:"240px"},500);
         }
     })
+    $('span[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'right',
+        html: true,
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner" style="background:none;" ></div></div>'
+    });
 </script>
 </body>
 </html>
