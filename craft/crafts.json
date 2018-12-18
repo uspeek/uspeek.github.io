@@ -3,7 +3,7 @@
     "+(71-85) to maximum Life":{
       "tier": 5,
       "price": [4,"chaos"],
-      "applies":["body"],
+      "applies":["body"]
     },
     "+(56-70) to Maximum Life": {
       "tier": 4,
