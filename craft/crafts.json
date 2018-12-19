@@ -282,9 +282,9 @@
       "price": [3, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "(46-65)% increased Physical Damage<br/>(13-15)% chance to cause Bleeding on Hit":{
-      "tier": 2,
-      "price": [3, "alch"],
+    "(66-85)% increased Physical Damage<br/>(16-17)% chance to cause Bleeding on Hit":{
+      "tier": 3,
+      "price": [3, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(66-85)% increased Physical Damage<br/>(16-17)% chance to Blind Enemies on Hit":{
@@ -305,6 +305,16 @@
     "(37-44)% increased Chaos Damage<br/>Chaos Skills have (9-10)% increased Skill Effect Duration":{
       "tier": 3,
       "price": [3, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
+    "(29-40)% increased Spell Damage<br/>Gain 6% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 1,
+      "price": [4, "transmut"],
+      "applies": ["2hm"]
+    },
+    "(19-26)% increased Spell Damage<br/>Gain 3% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 1,
+      "price": [4, "transmut"],
       "applies": ["1hm","1hr"]
     },
     "(56-63)% increased Spell Damage<br/>(16-20)% increased Mana Regeneration Rate":{
@@ -422,9 +432,9 @@
       "price": [1, "div"],
       "applies": ["gloves"]
     },
-    "(751-1000) to Armour during Sould Gain Prevention":{
-      "tier": 2,
-      "price": [2, "vaal"],
+    "(1001-2000) to Armour during Soul Gain Prevention":{
+      "tier": 3,
+      "price": [3, "vaal"],
       "applies": ["shield, armour"]
     },
     "+1 to Level of Socketed AoE Gems<br/>(8-10)% increased Area of Effect":{
@@ -823,6 +833,11 @@
       "price": [3,"vaal"],
       "applies":["gloves","boot"]
     },
+    "Non-Vaal Skills deal (41-50)% increased Damage during Soul Gain Prevention":{
+      "tier": 2,
+      "price": [2,"vaal"],
+      "applies":["gloves","boot"]
+    },
     "(39-45)% Critical Strike Multiplier while there is a Rare or Unique Enemy Nearby":{
       "tier": 4,
       "price": [4,"chaos"],
@@ -843,9 +858,9 @@
       "price": [4,"chaos"],
       "applies":["1hm","1hr"]
     },
-    "30 Energy Shield Regenerated per second while a Rare or Unique Enemy is Nearby":{
-      "tier": 2,
-      "price": [4, "alt"],
+    "120 Energy Shield Regenerated per second while a Rare or Unique Enemy is Nearby":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies":["body","belt"]
     },
     "(11-12)% increased Global Critical Strike Chance<br/>(14-16)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
@@ -966,6 +981,11 @@
     "(16-20) to Dexterity<br/>(11-14)% to Quality":{
       "tier": 2,
       "price": [2,"alch"],
+      "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
+    },
+    "(21-25) to Intelligence<br/>(15-18)% to Quality":{
+      "tier": 3,
+      "price": [1,"exa"],
       "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
     },
     "(16-20) to Intelligence<br/>(11-14)% to Quality":{
