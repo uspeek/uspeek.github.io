@@ -993,9 +993,9 @@
       "price": [3,"chaos"],
       "applies": ["!flasks"]
     },
-    "(16-20) to Strength<br/>(11-14)% to Quality":{
-      "tier": 2,
-      "price": [2,"alch"],
+    "(21-25) to Strength<br/>(15-18)% to Quality":{
+      "tier": 3,
+      "price": [4,"chaos"],
       "applies":["1hm","1hr","2hm","2hr","shield","helmet","body","gloves","boot"]
     },
     "(16-20) to Dexterity<br/>(11-14)% to Quality":{
