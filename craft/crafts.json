@@ -132,7 +132,7 @@
     "(56-69) to maximum Energy Shield":{
       "tier":3,
       "price": [2, "chaos"],
-      "applies": ["shield","body"],
+      "applies": ["shield","body"]
     },
     "(35-45) to maximum Energy Shield":{
       "tier": 2,
