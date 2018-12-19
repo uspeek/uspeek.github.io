@@ -287,9 +287,9 @@
       "price": [3, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "(66-85)% increased Physical Damage<br/>(16-17)% chance to cause Bleeding on Hit":{
-      "tier": 3,
-      "price": [3, "chaos"],
+    "(86-105)% increased Physical Damage<br/>(18-20)% chance to cause Bleeding on Hit":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(66-85)% increased Physical Damage<br/>(16-17)% chance to Blind Enemies on Hit":{
