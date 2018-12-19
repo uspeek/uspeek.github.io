@@ -144,6 +144,11 @@
       "price": [6,"alt"],
       "applies": ["shield","helm","body","gloves","boot"]
     },
+    "(10-14)% increased maximum Energy Shield":{
+      "tier": 1,
+      "price": [1,"chaos"]
+      "applies": ["amulet"]
+    },
     "Adds (78-93) to (95-110) Fire Damage":{
       "tier": 3,
       "price": [4,"chaos"],
@@ -307,14 +312,14 @@
       "price": [3, "chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(29-40)% increased Spell Damage<br/>Gain 6% of Non-Chaos Damage as extra Chaos Damage":{
-      "tier": 1,
-      "price": [4, "transmut"],
+    "(53-63)% increased Spell Damage<br/>Gain 10% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 3,
+      "price": [4, "alch"],
       "applies": ["2hm"]
     },
-    "(19-26)% increased Spell Damage<br/>Gain 3% of Non-Chaos Damage as extra Chaos Damage":{
-      "tier": 1,
-      "price": [4, "transmut"],
+    "(35-42)% increased Spell Damage<br/>Gain 5% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 3,
+      "price": [4, "alch"],
       "applies": ["1hm","1hr"]
     },
     "(56-63)% increased Spell Damage<br/>(16-20)% increased Mana Regeneration Rate":{
@@ -732,6 +737,16 @@
       "price": [2,"glass"],
       "applies": ["belt"]
     },
+	"(21-25)% chance to Avoid being Stunned":{
+		"tier": 2,
+		"price": [2, "regal"],
+		"applies": ["helm","gloves"]
+	},
+	"(21-25)% chance to Avoid Elemental Ailments":{
+		"tier": 2,
+		"price": [2, "chaos"],
+		"applies": ["helm","gloves"]
+	},
     "(4-5)% Chance to Block":{
       "tier": 2,
       "price": [3,"chaos"],
