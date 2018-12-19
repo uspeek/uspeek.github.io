@@ -117,7 +117,7 @@
     "(56-74)% Increased Armour / Evasion Rating / Energy shield / Any 2 combined":{
       "tier": 3,
       "price": [2,"chaos"],
-      "applies": ["shield","helm","body","gloves","boot"],
+      "applies": ["shield","helm","body","gloves","boot"]
     },
     "(180-250) to Armour / Evasion Rating":{
       "tier": 3,
