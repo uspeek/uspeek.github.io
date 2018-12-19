@@ -146,7 +146,7 @@
     },
     "(10-14)% increased maximum Energy Shield":{
       "tier": 1,
-      "price": [1,"chaos"]
+      "price": [1,"chaos"],
       "applies": ["amulet"]
     },
     "Adds (78-93) to (95-110) Fire Damage":{
@@ -951,6 +951,11 @@
     "(8-10)% increased Attack Speed<br/>(7-12)% to Quality":{
       "tier": 1,
       "price": [1,"div"],
+      "applies": ["1hm","1hr","2hm","2hr"]
+    },
+    "(21-25) increased Critical Strike Chance<br/>(13-18)% to Quality":{
+      "tier": 2,
+      "price": [1,"exa"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(15-20) increased Critical Strike Chance<br/>(7-12)% to Quality":{
