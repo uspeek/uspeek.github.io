@@ -928,6 +928,11 @@
       "price": [3,"chaos"],
       "applies": ["helm"]
     },
+    "Skills Cost no Mana while Focussed":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["amulet"]
+    },
     "(26-30)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
       "tier": 1,
       "price": [2,"chance"],
@@ -983,12 +988,17 @@
       "price": [3,"chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "(10-12)% to Fire/Lightning/Cold and Chaos Resistances":{
+    "(10-12)% to Fire and Chaos Resistances":{
       "tier": 2,
       "price": [1,"alch"],
       "applies": ["!flasks"]
     },
-    "(13-15)% to Lightning and Chaos Resistances":{
+    "(13-15)% to Lightning/Cold and Chaos Resistances":{
+      "tier": 2,
+      "price": [3,"chaos"],
+      "applies": ["!flasks"]
+    },
+    "(13-15)% to Cold and Chaos Resistances":{
       "tier": 2,
       "price": [3,"chaos"],
       "applies": ["!flasks"]
