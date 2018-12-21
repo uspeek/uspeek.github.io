@@ -48,14 +48,12 @@
     "(82-99)% Increased Spell Damage":{
       "tier": 4,
       "price": [1,"exa"],
-      "applies": ["2hm"],
-      "locked":1
+      "applies": ["2hm"]
     },
     "(55-66)% Increased Spell Damage":{
       "tier": 4,
       "price": [1,"exa"],
-      "applies": ["1hm","1hr"],
-      "locked":1
+      "applies": ["1hm","1hr"]
     },
     "(67-81)% Increased Spell Damage":{
       "tier": 3,
@@ -257,8 +255,7 @@
     "(18-24)% faster start of Energy Shield Recharge":{
       "tier": 2,
       "price": [1,"exa"],
-      "applies": ["ring"],
-      "locked": 1
+      "applies": ["ring"]
     },
     "(12-17)% faster start of Energy Shield Recharge":{
       "tier": 1,
@@ -298,9 +295,19 @@
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(86-105)% increased Physical Damage<br/>(18-20)% chance to Poison on Hit":{
-      "tier": 3,
-      "price": [3, "chaos"],
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies":["1hm","1hr","2hm","2hr"]
+    },
+    "(48-55)% increased Fire Damage<br/>(12-14)% chance to Ignite":{
+      "tier": 1,
+      "price": [3, "transmut"],
+      "applies": ["2hm","2hr"]
+    },
+    "(21-28)% increased Fire Damage<br/>6% chance to Ignite":{
+      "tier": 1,
+      "price": [3, "transmut"],
+      "applies": ["1hm","1hr"]
     },
     "(65-72)% increased Chaos Damage<br/>Chaos Skills have (18-20)% increased Skill Effect Duration":{
       "tier": 3,
@@ -362,9 +369,9 @@
       "price": [2, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "Attacks with this Weapon Penetrate (11-13)% Chaos resistance":{
-      "tier": 2,
-      "price": [2, "alch"],
+    "Attacks with this Weapon Penetrate (14-16)% Chaos resistance":{
+      "tier": 3,
+      "price": [4, "chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(36-40)% increased Armour/Evasion/ES/Combined<br/>(24-28) to Maximum Life":{
@@ -938,9 +945,9 @@
       "price": [2,"chance"],
       "applies":["helm"]
     },
-    "(10-11)% increased Global Critical Strike Chance <br/> (15-17)% to Critical Strike Multiplier if you've Shattered an Enemy Recently":{
-      "tier": 2,
-      "price": [4,"alt"],
+    "(14-16)% increased Global Critical Strike Chance <br/> (21-23)% to Critical Strike Multiplier if you've Shattered an Enemy Recently":{
+      "tier": 4,
+      "price": [4,"chaos"],
       "applies":["ring"]
     },
     "(14-16)% increased Fire Damage<br/>(14-16)% increased Lightning Damage":{
@@ -968,10 +975,10 @@
       "price": [2,"chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "(51-100) to Accuracy Rating<br/>(10-12)% to Quality":{
-      "tier": 2,
-      "price": [4,"alt"],
-      "applies": ["ring"]
+    "(161-250) to Accuracy Rating<br/>(16-18)% to Quality":{
+      "tier": 4,
+      "price": [4,"chaos"],
+      "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(13-16)% increased Attack Speed<br/>10% chance to Trigger Level 1 Blood Rage when you Kill an Enemy":{
       "tier": 2,
