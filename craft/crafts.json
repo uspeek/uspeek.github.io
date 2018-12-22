@@ -142,9 +142,9 @@
       "price": [6,"alt"],
       "applies": ["shield","helm","body","gloves","boot"]
     },
-    "(10-14)% increased maximum Energy Shield":{
-      "tier": 1,
-      "price": [1,"chaos"],
+    "(15-20)% increased maximum Energy Shield":{
+      "tier": 2,
+      "price": [1,"exa"],
       "applies": ["amulet"]
     },
     "Adds (78-93) to (95-110) Fire Damage":{
@@ -409,14 +409,14 @@
       "price": [2, "alch"],
       "applies": ["boot"]
     },
-    "(9-12)% increased Movement Speed<br/>Cannot be Chilled":{
-      "tier": 1,
-      "price": [2, "chance"],
+    "(13-16)% increased Movement Speed<br/>Cannot be Chilled":{
+      "tier": 2,
+      "price": [2, "alch"],
       "applies": ["boot"]
     },
-    "(61-110) to Armour<br/>(11-15) to maximum Energy Shield":{
-      "tier": 2,
-      "price": [4, "alt"],
+    "(186-285) to Armour<br/>(21-25) to maximum Energy Shield":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies":["belt"]
     },
     "(111-185) to Evasion Rating<br/>(16-20) to maximum Energy Shield":{
@@ -761,12 +761,6 @@
     "(11-15)% increased Flask effect duration":{
       "tier": 2,
       "price": [4,"glass"],
-      "applies": ["belt"],
-      "locked": 1
-    },
-    "(5-10)% increased Flask effect duration":{
-      "tier": 1,
-      "price": [2,"glass"],
       "applies": ["belt"]
     },
 	"(21-25)% chance to Avoid being Stunned":{
