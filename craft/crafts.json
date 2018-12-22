@@ -309,6 +309,16 @@
       "price": [3, "transmut"],
       "applies": ["1hm","1hr"]
     },
+    "(73-80)% increased Lightning Damage<br/>(21-23)% chance to Shock":{
+      "tier": 4,
+      "price": [8, "chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "(45-52)% increased Lightning Damage<br/>(10-11)% chance to Shock":{
+      "tier": 4,
+      "price": [8, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
     "(65-72)% increased Chaos Damage<br/>Chaos Skills have (18-20)% increased Skill Effect Duration":{
       "tier": 3,
       "price": [3, "chaos"],
@@ -319,16 +329,6 @@
       "price": [3, "chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(53-63)% increased Spell Damage<br/>Gain 10% of Non-Chaos Damage as extra Chaos Damage":{
-      "tier": 3,
-      "price": [4, "alch"],
-      "applies": ["2hm"]
-    },
-    "(35-42)% increased Spell Damage<br/>Gain 5% of Non-Chaos Damage as extra Chaos Damage":{
-      "tier": 3,
-      "price": [4, "alch"],
-      "applies": ["1hm","1hr"]
-    },
     "(56-63)% increased Spell Damage<br/>(16-20)% increased Mana Regeneration Rate":{
       "tier": 2,
       "price": [6, "alt"],
@@ -337,6 +337,16 @@
     "(29-36)% increased Spell Damage<br/>(7-9)% increased Mana Regeneration Rate":{
       "tier": 2,
       "price": [6, "alt"],
+      "applies": ["1hm","1hr"]
+    },
+    "(64-75)% increased Spell Damage<br/>Gain 12% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 4,
+      "price": [4, "chaos"],
+      "applies": ["2hm"]
+    },
+    "(43-50)% increased Spell Damage<br/>Gain 6% of Non-Chaos Damage as extra Chaos Damage":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(16-23)% to Non-Ailment Chaos Damage over Time Multiplier":{
@@ -970,6 +980,11 @@
       "price": [4,"chaos"],
       "applies": ["ring"]
     },
+	"15% of Damage Taken from Hits is Leeched as Life during Flask Effect":{
+		"tier": 0,
+		"price": [6, "glass"],
+		"applies": ["flask"]
+	},
     "(13-16)% increased Attack Speed<br/>(13-18)% to Quality":{
       "tier": 2,
       "price": [1,"exa"],
