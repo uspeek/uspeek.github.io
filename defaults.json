@@ -483,6 +483,11 @@
       "price": [4,"chance"],
       "applies": ["shield"]
     },
+    "5% reduced Damage taken from Damage Over Time":{
+      "tier": 0,
+      "price": [2,"regal"],
+      "applies": ["shield"]
+    },
     "Minions have (16-20)% increased maximum Life":{
       "tier": 2,
       "price": [2,"alch"],

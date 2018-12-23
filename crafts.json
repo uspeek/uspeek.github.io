@@ -175,9 +175,9 @@
       "price": [1, "div"],
       "applies": ["gloves"]
     },
-    "(1001-2000) to Armour during Soul Gain Prevention":{
-      "tier": 3,
-      "price": [3, "vaal"],
+    "(2001-3000) to Armour during Soul Gain Prevention":{
+      "tier": 4,
+      "price": [4, "vaal"],
       "applies": ["shield, armour"]
     },
     "+1 to Level of Socketed AoE Gems<br/>(8-10)% increased Area of Effect":{
