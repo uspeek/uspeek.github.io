@@ -78,11 +78,11 @@
 	<div class="container mt-4 mb-4">
 		<div class="row">
 			<div class="col-12 text-center">
-				Only Veiled mods are shown. To see available Default mods (unlocked through Acts and Maps), <a href="defaults.html" title="Default craft">click here</a>.
+				Only Default (unlocked through Acts and Maps) mods are shown. To see available Veiled mods, <a href="index.html" title="Veiled craft">click here</a>.
 			</div>
 		</div>
 	</div>
-    <div class="container">
+   <div class="container">
         <table class="table table-sm">
             <thead>
             <tr>
@@ -120,14 +120,14 @@
                     <td>Prefixes Cannot Be Changed</td>
                     <td>Everything, Suffix</strong></td>
                 </tr>
-                <tr id="prefixveil">
-                    <td class="separator" colspan="3">Veiled Prefixes</td>
+                <tr id="prefix">
+                    <td class="separator" colspan="3">Prefixes</td>
                 </tr>
-                <tr id="bprefixveil"></tr>
-                <tr id="suffixveil">
-                    <td class="separator" colspan="3">Veiled Suffixes</td>
+                <tr id="bprefix"></tr>
+                <tr id="suffix">
+                    <td class="separator" colspan="3">Suffixes</td>
                 </tr>
-                <tr id="bsuffixveil"></tr>
+                <tr id="bsuffix"></tr>
                 <tr id="sockets">
                     <td class="separator" colspan="3">Sockets, Links and colors</td>
                 </tr>
@@ -193,7 +193,7 @@
         "suffix":"Suffixes",
         "suffixveil":"Veiled Suffixes"
     },acr=[],cn=0;
-    $.getJSON("crafts.json", function(data){
+    $.getJSON("defaults.json", function(data){
         $.each(data, function(section,crafts){
             let crc=0;
             $.each(crafts, function(cr,att){
