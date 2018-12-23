@@ -1,10 +1,290 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>uspeek.github.io</title>
+    <title>Uspeek's Crafting Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="craft.css">
+    <link rel="stylesheet" href="bootstrap.min.css.css">
 </head>
 <body>
-<h1>Hello, World??</h1>
-<p><a href="./craft/">PoE Betrayal craftlist link</a></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container collapse navbar-collapse navbar">
+            <a class="navbar-brand" href="#">Uspeek's Crafting Service</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="jumpm">
+                        <a class="dropdown-item" data-scroll="meta" href="#">Metacrafts</a>
+                        <a class="dropdown-item" data-scroll="prefix" href="#">Prefixes - Default</a>
+                        <a class="dropdown-item" data-scroll="prefixveil" href="#">Prefixes - Veiled</a>
+                        <a class="dropdown-item" data-scroll="suffix" href="#">Suffixes - Default</a>
+                        <a class="dropdown-item" data-scroll="suffixveil" href="#">Suffixes - Veiled</a>
+                        <a class="dropdown-item" data-scroll="sockets" href="#">Sockets</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline mr-auto">
+                <input class="form-control mr-sm-2" id="searchform" type="search" placeholder="Search mods" aria-label="Search">
+            </form>
+            <!--<ul class="navbar-nav" id="classfilter">
+                <li class="nav-item filtericon c1hm" data-filter="1hm"></li>
+                <li class="nav-item filtericon c1hr" data-filter="1hr"></li>
+                <li class="nav-item filtericon c2hm" data-filter="2hm"></li>
+                <li class="nav-item filtericon c2hr" data-filter="2hr"></li>
+                <li class="nav-item filtericon cshield" data-filter="shield"></li>
+                <li class="nav-item filtericon chelm" data-filter="helm"></li>
+                <li class="nav-item filtericon cbody" data-filter="body"></li>
+                <li class="nav-item filtericon cgloves" data-filter="gloves"></li>
+                <li class="nav-item filtericon cboot" data-filter="boot"></li>
+                <li class="nav-item filtericon cring" data-filter="ring"></li>
+                <li class="nav-item filtericon camulet" data-filter="amulet"></li>
+                <li class="nav-item filtericon cbelt" data-filter="belt"></li>
+                <li class="nav-item filtericon cflask" data-filter="flask"></li>
+                <li class="nav-item filtericon cquiver" data-filter="quiver"></li>
+            </ul>-->
+        </div>
+    </nav>
+    <div class="container-fluid" id="hideout">
+        <div class="container">
+            <div class="form-group row mt-2">
+                <div class="col-2">Fees:</div>
+                <div class="col-10">none; only materials to craft are required</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">Forum thread:</div>
+                <div class="col-10">to be created</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">IGNs this league:</div>
+                <div class="col-10">@AlexanderExaltow and @YaHz</div>
+            </div>
+            <div class="form-group row">
+                <label for="qcp" class="col-2 col-form-label">Quick copy-paste PM: </label>
+                <div class="col-10">
+                    <input class="form-control" type="text" value="@Uspeek Hi, I need crafting service." readonly id="qcp" data-toggle="tooltip" title="Copied!" data-placement="top">
+                </div>
+            </div>
+        </div>
+        <span class="oi oi-arrow-thick-bottom" id="ho" data-toggle="tooltip" data-placement="right" title="<img src='./img/hoad.png' />"></span>
+    </div>
+    <div class="container">
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th scope="col">Price&nbsp;&nbsp;</th>
+                <th scope="col">Craft and rank</th>
+                <th scope="col">Applies to</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr id="meta">
+                    <td class="separator" colspan="3">Metacrafting</td>
+                </tr>
+                <tr>
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Suffixes Cannot Be Changed</td>
+                    <td>Everything, Prefix</td>
+                </tr>
+                <tr>
+                    <td>1 <span class="price exa"></span></td>
+                    <td>Cannot roll Attack Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr>
+                    <td>5 <span class="price blessed"></span></td>
+                    <td>Cannot roll Caster Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr>
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Can have Multiple Crafted Modifiers</td>
+                    <td>Everything, Suffix</td>
+                </tr>
+                <tr class="table">
+                    <td>2 <span class="price exa"></span></td>
+                    <td>Prefixes Cannot Be Changed</td>
+                    <td>Everything, Suffix</strong></td>
+                </tr>
+                <tr id="prefix">
+                    <td class="separator" colspan="3">Prefixes - Default</td>
+                </tr>
+<!--                <tr>
+                    <td>4 <span class="price alch"></span></td>
+                    <td><span class="rank">1</span>Attack with this Weapon Penetrate (14-16)% Elemental Resistances</td>
+                    <td><ul class="applies">
+                        <li class="filtericon c1hm" data-filter="1hm"></li>
+                        <li class="filtericon c1hr" data-filter="1hr"></li>
+                        <li class="filtericon c2hm" data-filter="2hm"></li>
+                        <li class="filtericon c2hr" data-filter="2hr"></li>
+                        <li class="filtericon cshield" data-filter="shield"></li>
+                        <li class="filtericon chelm" data-filter="helm"></li>
+                        <li class="filtericon cbody" data-filter="body"></li>
+                        <li class="filtericon cgloves" data-filter="gloves"></li>
+                        <li class="filtericon cboot" data-filter="boot"></li>
+                        <li class="filtericon cring" data-filter="ring"></li>
+                        <li class="filtericon camulet" data-filter="amulet"></li>
+                        <li class="filtericon cbelt" data-filter="belt"></li>
+                        <li class="filtericon cflask" data-filter="flask"></li>
+                        <li class="filtericon cquiver" data-filter="quiver"></li>
+                    </ul></td>
+                </tr>-->
+                <tr id="bprefix"></tr>
+                <tr id="prefixveil">
+                    <td class="separator" colspan="3">Prefixes - Veiled</td>
+                </tr>
+                <tr id="bprefixveil"></tr>
+                <tr id="suffix">
+                    <td class="separator" colspan="3">Suffixes - Default</td>
+                </tr>
+                <tr id="bsuffix"></tr>
+                <tr id="suffixveil">
+                    <td class="separator" colspan="3">Suffixes - Veiled</td>
+                </tr>
+                <tr id="bsuffixveil"></tr>
+                <tr id="sockets">
+                    <td class="separator" colspan="3">Sockets, Links and colors</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="row">
+                            <div class="col-3">
+                                <p>Sockets:</p>
+                                <ul>
+                                    <li>2S: 1 Jeweller's</li>
+                                    <li>3S: 3 Jewellers</li>
+                                    <li>4S: 10 Jewellers</li>
+                                    <li>5S: 70 Jewellers</li>
+                                    <li>6S: 350 Jewellers</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <p>Links:</p>
+                                <ul>
+                                    <li>2L: 1 Fusing</li>
+                                    <li>3L: 3 Fusings</li>
+                                    <li>4L: 5 Fusings</li>
+                                    <li>5L: 150 Fusings</li>
+                                    <li>6L: Not available</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <p>Colours (X and Y as any of Red, Greed or Blue):</p>
+                                <ul>
+                                    <li>1X: 4 Chromatics</li>
+                                    <li>2X: 25 Chromatics</li>
+                                    <li>1X1Y: 15 Chromatics</li>
+                                    <li>3X: 125 Chromatics</li>
+									<li>2X1Y: 100 Chromatics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="logout"></div>
+    </div>
+<script>
+    let lang={
+        "1hm":"One-handed melee",
+        "1hr":"One-handed ranged",
+        "2hm":"Two-handed melee",
+        "2hr":"Two-handed ranged",
+        "shield":"Shield",
+        "helm":"Helmet",
+        "body":"Body armour",
+        "gloves":"Gloves",
+        "boot":"Boots",
+        "ring":"Ring",
+        "amulet":"Amulet",
+        "belt":"Belt",
+        "flask":"Flask",
+        "quiver":"Quiver"
+    }, lcat={
+        "prefix":"Prefixes",
+        "prefixveil":"Veiled Prefixes",
+        "suffix":"Suffixes",
+        "suffixveil":"Veiled Suffixes"
+    },acr=[],cn=0;
+    $.getJSON("crafts.json", function(data){
+        $.each(data, function(section,crafts){
+            let crc=0;
+            $.each(crafts, function(cr,att){
+                let icons="", template,tier,locked,warning='';
+                crc+=1;
+                if(att['applies'][0]=="!flasks"){
+                    icons="Everything except Flasks"
+                }else{
+                    $.each(att['applies'],function(k,v){
+                        icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
+                    });
+                }
+                if(att['tier']==0){tier='';}else{tier=att['tier'];}
+                if(att['locked']==1){locked='table-warning';warning=' <i>(Will be available soon™)</i>';}
+                template='<tr id="'+section+crc+'" class="'+locked+'">' +
+                    '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
+                    '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
+                    '<td class="applies">'+icons+'</td></tr>';
+                acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
+                cn++;
+                $("#b"+section).before(template);
+            });
+        });
+    });
+    $("#jumpm a").click(function(){
+        let target = $(this).data('scroll');
+        $('html, body').animate({
+            scrollTop: $('#'+target).offset().top -150
+        },500);
+    });
+    $("#searchform").click(function (){this.select();}).autocomplete({
+        source: acr,
+        minLength: 3,
+        focus: function(event,ui){
+            return false;
+        },
+        select: function(event,ui) {
+            $('html, body').animate({
+                scrollTop: $('#' + ui.item.value).offset().top - 150
+            }, 500);
+            setTimeout(function(){
+                $('#' + ui.item.value+'').animate({backgroundColor:"#d4f0cd"},500).animate({backgroundColor:"none"},500);
+            },500);
+            $("#searchform").val('');
+            return false;
+        }
+    });
+    $("#qcp").click(function(){
+       this.select();
+       document.execCommand("copy");
+       $(this).tooltip('show');
+       setTimeout(function(){
+           $("#qcp").tooltip('dispose');
+       },3000);
+    });
+    $("#ho").click(function(){
+        if($(this).hasClass("oi-arrow-thick-bottom")){
+            $(this).removeClass("oi-arrow-thick-bottom").addClass("oi-arrow-thick-top");
+            $("#hideout").animate({height:"700px"},500);
+        }else{
+            $(this).removeClass("oi-arrow-thick-top").addClass("oi-arrow-thick-bottom");
+            $("#hideout").animate({height:"240px"},500);
+        }
+    })
+    $('span[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'right',
+        html: true,
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner" style="background:none;" ></div></div>'
+    });
+</script>
 </body>
 </html>
