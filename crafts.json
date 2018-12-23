@@ -70,6 +70,16 @@
       "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
+	"Minions have (19-25)% increased maximum Life<br/>Minions deal (19-25)% increased Damage":{
+		"tier": 1,
+		"price": [4,"transmut"],
+		"applies": ["2hm","2hr"]
+	},
+	"Minions have (12-15)% increased maximum Life<br/>Minions deal (12-15)% increased Damage":{
+		"tier": 1,
+		"price": [4,"transmut"],
+		"applies": ["1hm","1hr"]
+	},
     "(16-23)% to Non-Ailment Chaos Damage over Time Multiplier":{
       "tier": 2,
       "price": [6, "alt"],
