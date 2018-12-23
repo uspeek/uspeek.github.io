@@ -911,14 +911,12 @@
     "(16-20)% increased Attack Speed":{
       "tier": 3,
       "price": [1, "exa"],
-      "applies": ["1hm","2hm"],
-      "locked":1
+      "applies": ["1hm","2hm"]
     },
     "(11-13)% increased Attack Speed":{
       "tier": 3,
       "price": [1, "exa"],
-      "applies": ["1hr","2hr"],
-      "locked":1
+      "applies": ["1hr","2hr"]
     },
     "(11-15)% increased Attack Speed":{
       "tier": 2,
@@ -943,14 +941,12 @@
     "(21-28)% increased Cast Speed":{
       "tier": 3,
       "price": [1, "exa"],
-      "applies": ["2hm"],
-      "locked":1
+      "applies": ["2hm"]
     },
     "(15-18)% increased Cast Speed":{
       "tier": 3,
       "price": [1, "exa"],
-      "applies": ["1hm","1hr"],
-      "locked":1
+      "applies": ["1hm","1hr"]
     },
     "(16-20)% increased Cast Speed":{
       "tier": 2,
