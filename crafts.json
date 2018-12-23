@@ -144,7 +144,7 @@
     },
     "(15-20)% increased maximum Energy Shield":{
       "tier": 2,
-      "price": [1,"exa"],
+      "price": [2,"chaos"],
       "applies": ["amulet"]
     },
     "Adds (78-93) to (95-110) Fire Damage":{
