@@ -50,14 +50,14 @@
       "price": [3, "chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(56-63)% increased Spell Damage<br/>(16-20)% increased Mana Regeneration Rate":{
-      "tier": 2,
-      "price": [6, "alt"],
+    "(73-80)% increased Spell Damage<br/>(26-30)% increased Mana Regeneration Rate":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["2hm"]
     },
-    "(29-36)% increased Spell Damage<br/>(7-9)% increased Mana Regeneration Rate":{
-      "tier": 2,
-      "price": [6, "alt"],
+    "(45-52)% increased Spell Damage<br/>(13-15)% increased Mana Regeneration Rate":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(64-75)% increased Spell Damage<br/>Gain 12% of Non-Chaos Damage as extra Chaos Damage":{
@@ -80,14 +80,14 @@
 		"price": [4,"transmut"],
 		"applies": ["1hm","1hr"]
 	},
-    "(16-23)% to Non-Ailment Chaos Damage over Time Multiplier":{
-      "tier": 2,
-      "price": [6, "alt"],
+    "(24-32)% to Non-Ailment Chaos Damage over Time Multiplier":{
+      "tier": 3,
+      "price": [2, "alch"],
       "applies": ["2hm","2hr"]
     },
-    "(9-12)% to Non-Ailment Chaos Damage over Time Multiplier":{
-      "tier": 2,
-      "price": [6, "alt"],
+    "(13-16)% to Non-Ailment Chaos Damage over Time Multiplier":{
+      "tier": 3,
+      "price": [2, "alch"],
       "applies": ["1hm","1hr"]
     },
     "(33-40)% to Cold Damage over Time Multiplier":{
@@ -412,6 +412,11 @@
       "price": [4,"alt"],
       "applies":["gloves","quiver"]
     },
+	"(16-23)% increased Totem Placement speed":{
+		"tier": 2,
+		"price": [2,"alch"],
+		"applies": ["boot","amulet"]
+	},
     "Shock nearby Enemies for 4 Seconds when you Focus":{
       "tier": 3,
       "price": [2, "chaos"],
