@@ -1011,23 +1011,11 @@
     "(201-300) to Accuracy Rating":{
       "tier": 3,
       "price": [2, "chaos"],
-      "applies": ["1hm","1hr","2hm","2hr"],
-      "locked": 1
-    },
-    "(121-200) to Accuracy Rating":{
-      "tier": 2,
-      "price": [2, "alch"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
     "(151-220) to Accuracy Rating":{
       "tier": 3,
       "price": [2, "chaos"],
-      "applies": ["shield","helm","gloves","ring","amulet","quiver"],
-      "locked":1
-    },
-    "(121-150) to Accuracy Rating":{
-      "tier": 2,
-      "price": [2, "alch"],
       "applies": ["shield","helm","gloves","ring","amulet","quiver"]
     },
     "(13-16)% increased Global Physical Damage":{
