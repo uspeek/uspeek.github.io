@@ -20,14 +20,14 @@
       "price": [8, "chaos"],
       "applies":["1hm","1hr","2hm","2hr"]
     },
-    "(48-55)% increased Fire Damage<br/>(12-14)% chance to Ignite":{
-      "tier": 1,
-      "price": [3, "transmut"],
+    "(73-80)% increased Fire Damage<br/>(21-23)% chance to Ignite":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["2hm","2hr"]
     },
-    "(21-28)% increased Fire Damage<br/>6% chance to Ignite":{
-      "tier": 1,
-      "price": [3, "transmut"],
+    "(45-52)% increased Fire Damage<br/>(10-11)% chance to Ignite":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(64-72)% increased Cold Damage<br/>(18-20)% chance to Freeze":{
@@ -154,6 +154,11 @@
       "tier": 2,
       "price": [2, "alch"],
       "applies": ["boot"]
+    },
+    "(186-285) to Armour and Evasion Rating":{
+      "tier": 4,
+      "price": [4, "chaos"],
+      "applies":["belt"]
     },
     "(186-285) to Armour<br/>(21-25) to maximum Energy Shield":{
       "tier": 4,
