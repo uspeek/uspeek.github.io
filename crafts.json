@@ -30,6 +30,16 @@
       "price": [3, "transmut"],
       "applies": ["1hm","1hr"]
     },
+    "(64-72)% increased Cold Damage<br/>(18-20)% chance to Freeze":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "(37-44)% increased Cold Damage<br/>(8-9)% chance to Freeze":{
+      "tier": 3,
+      "price": [3, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
     "(73-80)% increased Lightning Damage<br/>(21-23)% chance to Shock":{
       "tier": 4,
       "price": [8, "chaos"],
@@ -290,6 +300,11 @@
       "price": [4, "vaal"],
       "applies": ["1hm","1hr","shield"]
     },
+	"Gain 6% of Maximum Life as Extra Maximum Energy Shield":{
+		"tier": 1,
+		"price": [3,"aug"],
+		"applies":["body"]
+	},
     "(1-2)% of Physical Damage from Hits taken as Fire Damage":{
       "tier": 1,
       "price": [3, "alt"],
@@ -319,7 +334,22 @@
       "tier": 0,
       "price": [6,"alch"],
       "applies": ["body"]
-    }
+    },
+	"(8-9)% increased Area of Effect<br/>(9-12)% increased Area Damage":{
+		"tier": 2,
+		"price": [3,"chaos"],
+		"applies": ["amulet"]
+	},
+	"(10-12)% increased Projectile Speed<br/>(6-8)% increased Projectile Damage":{
+		"tier": 2,
+		"price": [3,"chaos"],
+		"applies": ["amulet"]
+	},
+	"(6-8)% increased Melee Damage<br/>+1 to Melee Weapon and Unarmed Attack range":{
+		"tier": 1,
+		"price": [2,"alch"],
+		"applies": ["amulet"]
+	}
   },
   "suffixveil":{
     "(7-9)% chance to deal Double Damage":{
