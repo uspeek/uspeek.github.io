@@ -1113,9 +1113,9 @@
       "price": [4,"chaos"],
       "applies":["helm","amulet"]
     },
-    "(9-10)% increased Brand Attachment range":{
-      "tier": 2,
-      "price": [2,"alch"],
+    "(11-12)% increased Brand Attachment range":{
+      "tier": 3,
+      "price": [4,"chaos"],
       "applies": ["gloves","amulet"]
     }
   }
