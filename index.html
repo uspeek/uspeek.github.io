@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!---><link rel="stylesheet" href="bootstrap.min.css"><!---->
     <title>Uspeek's Crafting Service</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +13,6 @@
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="craft.css">
-    <link rel="stylesheet" href="bootstrap.min.css.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -31,25 +31,12 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline mr-auto">
+            <form class="form-inline mx-0">
                 <input class="form-control mr-sm-2" id="searchform" type="search" placeholder="Search mods" aria-label="Search">
             </form>
-            <!--<ul class="navbar-nav" id="classfilter">
-                <li class="nav-item filtericon c1hm" data-filter="1hm"></li>
-                <li class="nav-item filtericon c1hr" data-filter="1hr"></li>
-                <li class="nav-item filtericon c2hm" data-filter="2hm"></li>
-                <li class="nav-item filtericon c2hr" data-filter="2hr"></li>
-                <li class="nav-item filtericon cshield" data-filter="shield"></li>
-                <li class="nav-item filtericon chelm" data-filter="helm"></li>
-                <li class="nav-item filtericon cbody" data-filter="body"></li>
-                <li class="nav-item filtericon cgloves" data-filter="gloves"></li>
-                <li class="nav-item filtericon cboot" data-filter="boot"></li>
-                <li class="nav-item filtericon cring" data-filter="ring"></li>
-                <li class="nav-item filtericon camulet" data-filter="amulet"></li>
-                <li class="nav-item filtericon cbelt" data-filter="belt"></li>
-                <li class="nav-item filtericon cflask" data-filter="flask"></li>
-                <li class="nav-item filtericon cquiver" data-filter="quiver"></li>
-            </ul>-->
+            <ul class="navbar-nav" id="classfilter">
+
+            </ul>
         </div>
     </nav>
     <div class="container-fluid" id="hideout">
@@ -75,7 +62,7 @@
         </div>
         <span class="oi oi-arrow-thick-bottom" id="ho" data-toggle="tooltip" data-placement="right" title="<img src='./img/hoad.png' />"></span>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <table class="table table-sm">
             <thead>
             <tr>
@@ -179,99 +166,39 @@
         </table>
         <div id="logout"></div>
     </div>
-<script>
-    let lang={
-        "1hm":"One-handed melee",
-        "1hr":"One-handed ranged",
-        "2hm":"Two-handed melee",
-        "2hr":"Two-handed ranged",
-        "shield":"Shield",
-        "helm":"Helmet",
-        "body":"Body armour",
-        "gloves":"Gloves",
-        "boot":"Boots",
-        "ring":"Ring",
-        "amulet":"Amulet",
-        "belt":"Belt",
-        "flask":"Flask",
-        "quiver":"Quiver"
-    }, lcat={
-        "prefix":"Prefixes",
-        "prefixveil":"Veiled Prefixes",
-        "suffix":"Suffixes",
-        "suffixveil":"Veiled Suffixes"
-    },acr=[],cn=0;
-    $.getJSON("crafts.json", function(data){
-        $.each(data, function(section,crafts){
-            let crc=0;
-            $.each(crafts, function(cr,att){
-                let icons="", template,tier,locked,warning='';
-                crc+=1;
-                if(att['applies'][0]=="!flasks"){
-                    icons="Everything except Flasks"
-                }else{
-                    $.each(att['applies'],function(k,v){
-                        icons+="<li class='filtericon c"+v+"' data-filter='"+v+"' title='"+lang[v]+"'></li>";
-                    });
-                }
-                if(att['tier']==0){tier='';}else{tier=att['tier'];}
-                if(att['locked']==1){locked='table-warning';warning=' <i>(Will be available soon™)</i>';}
-                template='<tr id="'+section+crc+'" class="'+locked+'">' +
-                    '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
-                    '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
-                    '<td class="applies">'+icons+'</td></tr>';
-                acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
-                cn++;
-                $("#b"+section).before(template);
-            });
-        });
-    });
-    $("#jumpm a").click(function(){
-        let target = $(this).data('scroll');
-        $('html, body').animate({
-            scrollTop: $('#'+target).offset().top -150
-        },500);
-    });
-    $("#searchform").click(function (){this.select();}).autocomplete({
-        source: acr,
-        minLength: 3,
-        focus: function(event,ui){
-            return false;
-        },
-        select: function(event,ui) {
-            $('html, body').animate({
-                scrollTop: $('#' + ui.item.value).offset().top - 150
-            }, 500);
-            setTimeout(function(){
-                $('#' + ui.item.value).animate({backgroundColor:"#d4f0cd"},500).animate({backgroundColor:"none"},500);
-            },500);
-            $("#searchform").val('');
-            return false;
-        }
-    });
-    $("#qcp").click(function(){
-       this.select();
-       document.execCommand("copy");
-       $(this).tooltip('show');
-       setTimeout(function(){
-           $("#qcp").tooltip('dispose');
-       },3000);
-    });
-    $("#ho").click(function(){
-        if($(this).hasClass("oi-arrow-thick-bottom")){
-            $(this).removeClass("oi-arrow-thick-bottom").addClass("oi-arrow-thick-top");
-            $("#hideout").animate({height:"700px"},500);
-        }else{
-            $(this).removeClass("oi-arrow-thick-top").addClass("oi-arrow-thick-bottom");
-            $("#hideout").animate({height:"240px"},500);
-        }
-    })
-    $('span[data-toggle="tooltip"]').tooltip({
-        animated: 'fade',
-        placement: 'right',
-        html: true,
-        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner" style="background:none;" ></div></div>'
-    });
-</script>
+    <div class="container mb-5">&nbsp;</div>
+    <!--hidden code enable it at your wish but let me know if I should use it-->
+    <!--
+    <nav class="navbar fixed-bottom pb-0" >
+        <div class="container pb-2" id="searchbar">
+            <div class="container mx-auto w-50">
+                <div class="row mb-1">
+                    <form class="form-inline mx-auto w-100">
+                        <div class="input-group w-100">
+                            <input class="form-control" id="searchfield" type="search" placeholder="Search mods" aria-label="Search">
+                            <div class="btn-group dropup input-group-append">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jump to
+                                </button>
+                                <div class="dropdown-menu" id="jumpm">
+                                    <a class="dropdown-item" data-scroll="meta" href="#">Metacrafts</a>
+                                    <a class="dropdown-item" data-scroll="prefixveil" href="#">Veiled Prefixes</a>
+                                    <a class="dropdown-item" data-scroll="suffixveil" href="#">Veiled Suffixes</a>
+                                    <a class="dropdown-item" data-scroll="sockets" href="#">Sockets</a>
+                                    <a class="dropdown-item" data-scroll="prefix" href="#">Default Prefixes</a>
+                                    <a class="dropdown-item" data-scroll="suffix" href="#">Default Suffixes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <ul class="navbar-nav mx-auto" id="classfilter">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>-->
+<script src="./crafts.js"></script>
 </body>
 </html>

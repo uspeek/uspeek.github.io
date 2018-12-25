@@ -6,7 +6,6 @@
 @font-face{
     font-family: POESC;
     src: url("./font/Fontin-SmallCaps.otf");
-
 }
 
 body{
@@ -33,8 +32,13 @@ body{
     cursor: pointer;
 }
 
-.appl{
-    font-family: POESC;
+#searchbar{
+    /*background-image: linear-gradient(to top, rgba(222,222,222,0.8) 0%, rgba(222,222,222,0.8) 50%, rgba(222,222,222,0.0));*/
+    background-image: radial-gradient(ellipse at bottom,rgba(255,255,255,0.8) 50%, transparent 60%);
+}
+
+#classfilter{
+    flex-direction: row;
 }
 
 .filtericon{
