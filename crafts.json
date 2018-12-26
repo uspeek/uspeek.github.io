@@ -1063,9 +1063,9 @@
       "price": [3,"chaos"],
       "applies": ["1hm","1hr","2hm","2hr"]
     },
-    "(10-12)% to Fire and Chaos Resistances":{
-      "tier": 2,
-      "price": [1,"alch"],
+    "(13-15)% to Fire and Chaos Resistances":{
+      "tier": 3,
+      "price": [3,"chaos"],
       "applies": ["!flasks"]
     },
     "(13-15)% to Lightning and Chaos Resistances":{
