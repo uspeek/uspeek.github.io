@@ -369,14 +369,14 @@
 		"price": [4,"transmut"],
 		"applies": ["1hm","1hr"]
 	},
-    "(24-32)% to Non-Ailment Chaos Damage over Time Multiplier":{
-      "tier": 3,
-      "price": [2, "alch"],
+    "(33-40)% to Non-Ailment Chaos Damage over Time Multiplier":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["2hm","2hr"]
     },
-    "(13-16)% to Non-Ailment Chaos Damage over Time Multiplier":{
+    "(17-20)% to Non-Ailment Chaos Damage over Time Multiplier":{
       "tier": 3,
-      "price": [2, "alch"],
+      "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(33-40)% to Cold Damage over Time Multiplier":{
