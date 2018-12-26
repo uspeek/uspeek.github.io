@@ -424,9 +424,9 @@
       "price": [4, "chaos"],
       "applies": ["ring","amulet"]
     },
-    "(13-15)% increased Movement Speed<br/>(8-12)% chance to gain Onslaught for 4 seconds on Kill":{
-      "tier": 2,
-      "price": [2, "alch"],
+    "(17-20)% increased Movement Speed<br/>(8-12)% chance to gain Onslaught for 4 seconds on Kill":{
+      "tier": 3,
+      "price": [4, "chaos"],
       "applies": ["boot"]
     },
     "(13-16)% increased Movement Speed<br/>Cannot be Chilled":{
@@ -853,6 +853,16 @@
   }
 },
   "suffixveil":{
+    "Minions have (25-28)% increased Attack Speed<br/>Minions have (25-28)% increased Cast Speed":{
+      "tier": 4,
+      "price": [4, "chaos"],
+      "applies": ["2hm","2hr"]
+    },
+    "Minions have (14-15)% increased Attack Speed<br/>Minions have (25-28)% increased Cast Speed":{
+      "tier": 4,
+      "price": [4, "chaos"],
+      "applies": ["1hm","1hr"]
+    },
     "(7-9)% chance to deal Double Damage":{
       "tier": 2,
       "price": [2,"chaos"],
@@ -873,6 +883,11 @@
 		"price": [1,"exa"],
 		"applies": ["ring","amulet"]
 	},
+    "+1 to Minimum Power Charges":{
+      "tier": 0,
+      "price": [1,"exa"],
+      "applies": ["ring","amulet"]
+    },
     "(5-6)% increased Attack and Cast Speed":{
       "tier":3,
       "price": [3,"chaos"],
@@ -943,9 +958,9 @@
       "price": [4, "chaos"],
       "applies":["body","belt"]
     },
-    "(11-12)% increased Global Critical Strike Chance<br/>(14-16)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
-      "tier": 2,
-      "price": [4,"alt"],
+    "(13-14)% increased Global Critical Strike Chance<br/>(17-19)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
+      "tier": 3,
+      "price": [2,"alch"],
       "applies":["gloves","quiver"]
     },
 	"(24-30)% increased Totem Placement speed":{
@@ -1069,12 +1084,12 @@
       "applies": ["!flasks"]
     },
     "(13-15)% to Lightning and Chaos Resistances":{
-      "tier": 2,
+      "tier": 3,
       "price": [3,"chaos"],
       "applies": ["!flasks"]
     },
     "(13-15)% to Cold and Chaos Resistances":{
-      "tier": 2,
+      "tier": 3,
       "price": [3,"chaos"],
       "applies": ["!flasks"]
     },
