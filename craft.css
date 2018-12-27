@@ -92,45 +92,22 @@ body{
     background-size: 24px 24px !important;
 }
 
-.alch{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToRare.png?scale=1");
-}
-.chaos{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png?scale=1");
-}
-.alt{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png?scale=1");
-}
-.transmut{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.png?scale=1");
-}
-.aug{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToMagic.png?scale=1");
-}
-.exa{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png?scale=1");
-}
-.div{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyModValues.png?scale=1");
-}
-.glass{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyFlaskQuality.png?scale=1");
-}
-.gcp{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyGemQuality.png?scale=1");
-}
-.chance{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeRandomly.png?scale=1");
-}
-.regal{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.png?scale=1");
-}
-.vaal{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyVaal.png?scale=1");
-}
-.blessed{
-    background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyImplicitMod.png?scale=1");
-}
+.alch{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToRare.png?scale=1");}
+.chaos{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png?scale=1");}
+.alt{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png?scale=1");}
+.transmut{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.png?scale=1");}
+.aug{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToMagic.png?scale=1");}
+.exa{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png?scale=1");}
+.div{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyModValues.png?scale=1");}
+.glass{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyFlaskQuality.png?scale=1");}
+.gcp{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyGemQuality.png?scale=1");}
+.chance{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeRandomly.png?scale=1");}
+.regal{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.png?scale=1");}
+.vaal{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyVaal.png?scale=1");}
+.blessed{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyImplicitMod.png?scale=1");}
+.fusing{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketLinks.png?scale=1");}
+.jeweller{background-image: url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketNumbers.png?scale=1");}
+.chrome{background-image:url("https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketColours.png?scale=1");}
 
 nav {
     z-index: 1 !important;
