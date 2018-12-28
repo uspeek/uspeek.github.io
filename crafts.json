@@ -624,7 +624,12 @@
 		"price": [3,"chaos"],
 		"applies": ["amulet"]
 	},
-	"(10-12)% increased Projectile Speed<br/>(6-8)% increased Projectile Damage":{
+    "(17-20)% increased Projectile Speed<br/>(13-16)% increased Projectile Damage":{
+      "tier": 3,
+      "price": [1,"div"],
+      "applies": ["amulet"]
+    },
+	"(13-16)% increased Projectile Speed<br/>(9-12)% increased Projectile Damage":{
 		"tier": 2,
 		"price": [3,"chaos"],
 		"applies": ["amulet"]
