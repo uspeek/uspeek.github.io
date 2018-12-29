@@ -347,14 +347,14 @@
       "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
-	"Minions have (26-32)% increased maximum Life<br/>Minions deal (26-32)% increased Damage":{
-		"tier": 2,
-		"price": [6,"alt"],
+	"Minions have (33-38)% increased maximum Life<br/>Minions deal (33-38)% increased Damage":{
+		"tier": 3,
+		"price": [4,"alch"],
 		"applies": ["2hm","2hr"]
 	},
-	"Minions have (16-19)% increased maximum Life<br/>Minions deal (16-19)% increased Damage":{
-		"tier": 2,
-		"price": [6,"alt"],
+	"Minions have (20-24)% increased maximum Life<br/>Minions deal (20-24)% increased Damage":{
+		"tier": 3,
+		"price": [4,"alch"],
 		"applies": ["1hm","1hr"]
 	},
     "(33-40)% to Non-Ailment Chaos Damage over Time Multiplier":{
