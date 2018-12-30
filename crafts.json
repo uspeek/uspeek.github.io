@@ -397,9 +397,9 @@
       "price": [4, "chaos"],
       "applies": ["shield","helm","body","gloves","boot"]
     },
-    "(27-33) to maximum Mana<br/>2 Mana Regenerated per second":{
-      "tier": 2,
-      "price": [2, "alch"],
+    "(34-40) to maximum Mana<br/>4 Mana Regenerated per second":{
+      "tier": 3,
+      "price": [4, "chaos"],
       "applies": ["ring","amulet"]
     },
     "(34-40) to maximum Mana<br/>5% reduced Mana Cost of Skills":{
@@ -447,9 +447,9 @@
       "price": [3, "chaos"],
       "applies": ["belt"]
     },
-    "(5-6)% chance for your Flasks to not consume Charges":{
-      "tier": 1,
-      "price": [1, "glass"],
+    "(7-8)% chance for your Flasks to not consume Charges":{
+      "tier": 2,
+      "price": [3, "chaos"],
       "applies": ["belt"]
     },
     "33% reduced Flask Charges gained<br/>(11-14)% increased effect of Flasks on you":{
@@ -557,6 +557,11 @@
       "price": [2, "alch"],
       "applies": ["1hm","1hr"]
     },
+    "Hits can't be Evaded":{
+      "tier":0,
+      "price":[3,"exa"],
+      "applies": ["1hm","2hm"]
+    },
     "(19-23)% increased Damage during any Flask Effect":{
       "tier": 3,
       "price": [2, "alch"],
@@ -622,9 +627,9 @@
 		"price": [3,"chaos"],
 		"applies": ["amulet"]
 	},
-	"(6-8)% increased Melee Damage<br/>+1 to Melee Weapon and Unarmed Attack range":{
-		"tier": 1,
-		"price": [2,"alch"],
+	"(9-12)% increased Melee Damage<br/>+1 to Melee Weapon and Unarmed Attack range":{
+		"tier": 2,
+		"price": [3,"chaos"],
 		"applies": ["amulet"]
 	}
   },
@@ -1098,9 +1103,9 @@
       "price": [2,"chaos"],
       "applies":["1hm","1hr","2hm","2hr","shield","helm","body","gloves","boot"]
     },
-    "1% of Life Regenerated per second during any Flask Effect":{
+    "1.5% of Life Regenerated per second during any Flask Effect":{
       "tier": 2,
-      "price": [2,"glass"],
+      "price": [4,"alch"],
       "applies":["belt"]
     },
     "(7-8)% increased Trap Throwing Speed":{
