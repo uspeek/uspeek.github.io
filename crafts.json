@@ -993,6 +993,11 @@
       "price": [3,"chaos"],
       "applies": ["helm"]
     },
+    "(21-25)% of Damage is taken from Mana before Life while Focussed":{
+      "tier": 0,
+      "price": [3,"chaos"],
+      "applies": ["body"]
+    },
     "Skills Cost no Mana while Focussed":{
       "tier": 0,
       "price": [3,"chaos"],
