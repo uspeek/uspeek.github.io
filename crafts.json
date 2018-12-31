@@ -467,6 +467,11 @@
       "price": [1, "div"],
       "applies": ["gloves"]
     },
+    "You can apply an additional Curse":{
+      "tier": 0,
+      "price": [3, "exa"],
+      "applies": ["body"]
+    },
     "(2001-3000) to Armour during Soul Gain Prevention":{
       "tier": 4,
       "price": [4, "vaal"],
