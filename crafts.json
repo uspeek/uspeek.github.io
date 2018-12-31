@@ -1018,6 +1018,11 @@
       "price": [4,"chaos"],
       "applies":["ring"]
     },
+    "(11-13)% increased Global Physical Damage<br/>(11-13) increased Chaos Damage":{
+      "tier":3,
+      "price":[2,"alch"],
+      "applies":["ring"]
+    },
     "(14-16)% increased Fire Damage<br/>(14-16)% increased Lightning Damage":{
       "tier": 4,
       "price": [4,"chaos"],
