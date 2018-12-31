@@ -542,9 +542,14 @@
       "price": [3, "chaos"],
       "applies": ["gloves","amulet"]
     },
-    "(5-6)% to Quality of Socketed Gems":{
-      "tier": 2,
-      "price": [4, "gcp"],
+    "(7-8)% to Quality of Socketed Gems":{
+      "tier":4,
+      "price": [1,"exa"],
+      "applies": ["1hm","1hr","2hm","2hr","shield"]
+    },
+    "(6-7)% to Quality of Socketed Gems":{
+      "tier": 3,
+      "price": [8, "gcp"],
       "applies": ["1hm","1hr","2hm","2hr","shield"]
     },
     "Adds (11-13) to (14-16) Physical Damage<br/>35% chance to cause Bleeding on Hit":{
@@ -898,9 +903,9 @@
       "price": [4,"chaos"],
       "applies":["shield","amulet"]
     },
-    "(6-7)% chance to Avoid Elemental Damage from Hits during Soul Gain Prevention":{
-      "tier": 1,
-      "price": [2, "vaal"],
+    "(8-9)% chance to Avoid Elemental Damage from Hits during Soul Gain Prevention":{
+      "tier": 2,
+      "price": [4, "vaal"],
       "applies":["helm","body"]
     },
     "You have Onslaught during Soul Gain Prevention":{
