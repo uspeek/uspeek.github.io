@@ -1013,9 +1013,9 @@
       "price": [3,"chaos"],
       "applies": ["amulet"]
     },
-    "(26-30)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
-      "tier": 1,
-      "price": [2,"chance"],
+    "(31-35)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
+      "tier": 2,
+      "price": [4,"chance"],
       "applies":["helm"]
     },
     "(14-16)% increased Global Critical Strike Chance <br/> (21-23)% to Critical Strike Multiplier if you've Shattered an Enemy Recently":{
