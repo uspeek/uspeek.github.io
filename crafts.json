@@ -637,13 +637,18 @@
 		"price": [3,"chaos"],
 		"applies": ["amulet"]
 	},
+    "(13-16)% increased Melee Damage<br/>+1 to Melee Weapon and Unarmed Attack range":{
+      "tier": 3,
+      "price": [1,"div"],
+      "applies": ["amulet"]
+    },
 	"(9-12)% increased Melee Damage<br/>+1 to Melee Weapon and Unarmed Attack range":{
 		"tier": 2,
 		"price": [3,"chaos"],
 		"applies": ["amulet"]
 	}
   },
-  "suffix":{
+"suffix":{
   "(29-35)% to Fire/Cold/Lightning Resistance":{
     "tier": 3,
     "price": [3, "chaos"],
