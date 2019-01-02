@@ -883,6 +883,11 @@
       "price": [1,"exa"],
       "applies": ["ring","amulet"]
     },
+    "+1 to Minimum Frenzy Charges":{
+      "tier": 0,
+      "price": [1,"exa"],
+      "applies": ["ring","amulet"]
+    },
     "(5-6)% increased Attack and Cast Speed":{
       "tier":3,
       "price": [3,"chaos"],
