@@ -317,14 +317,14 @@
       "price": [8, "chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(65-72)% increased Chaos Damage<br/>Chaos Skills have (18-20)% increased Skill Effect Duration":{
-      "tier": 3,
-      "price": [3, "chaos"],
+    "(73-80)% increased Chaos Damage<br/>Chaos Skills have (21-23)% increased Skill Effect Duration":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["2hm","2hr"]
     },
-    "(37-44)% increased Chaos Damage<br/>Chaos Skills have (9-10)% increased Skill Effect Duration":{
-      "tier": 3,
-      "price": [3, "chaos"],
+    "(45-52)% increased Chaos Damage<br/>Chaos Skills have (11-12)% increased Skill Effect Duration":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(73-80)% increased Spell Damage<br/>(26-30)% increased Mana Regeneration Rate":{
@@ -347,14 +347,14 @@
       "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
-	"Minions have (33-38)% increased maximum Life<br/>Minions deal (33-38)% increased Damage":{
-		"tier": 3,
-		"price": [4,"alch"],
+	"Minions have (39-45)% increased maximum Life<br/>Minions deal (39-45)% increased Damage":{
+		"tier": 4,
+		"price": [4,"chaos"],
 		"applies": ["2hm","2hr"]
 	},
-	"Minions have (20-24)% increased maximum Life<br/>Minions deal (20-24)% increased Damage":{
-		"tier": 3,
-		"price": [4,"alch"],
+	"Minions have (25-28)% increased maximum Life<br/>Minions deal (25-28)% increased Damage":{
+		"tier": 4,
+		"price": [4,"chaos"],
 		"applies": ["1hm","1hr"]
 	},
     "(33-40)% to Non-Ailment Chaos Damage over Time Multiplier":{
@@ -467,6 +467,11 @@
       "price": [1, "div"],
       "applies": ["gloves"]
     },
+    "+1 to maximum nuymber of Zombies<br/>+1 to maximum number of Skeletons":{
+      "tier": 0,
+      "price": [4,"chaos"],
+      "applies": ["helm","body"]
+    },
     "You can apply an additional Curse":{
       "tier": 0,
       "price": [3, "exa"],
@@ -521,6 +526,11 @@
       "tier": 4,
       "price": [4, "chaos"],
       "applies": ["helm","boot"]
+    },
+    "+1 to Level of Socketed Support Gems":{
+      "tier": 1,
+      "price": [1, "div"],
+      "applies": ["1hm","1hr","2hm","2hr","shield"]
     },
     "(17-20)% increased Damage":{
       "tier": 4,
@@ -973,6 +983,11 @@
       "price": [2, "chaos"],
       "applies":["ring"]
     },
+    "Your Critical Strike Chance is Lucky while Focussed":{
+      "tier": 0,
+      "price": [9,"alt"],
+      "applies": ["belt"]
+    },
     "1% of Evasion Rating is Regenerated as Life per second while Focussed":{
       "tier": 0,
       "price": [3,"chaos"],
@@ -1042,6 +1057,11 @@
       "tier": 4,
       "price": [4,"chaos"],
       "applies": ["ring"]
+    },
+    "3% of Life Regenerated per second during Flask Effect":{
+      "tier":0,
+      "price":[6,"glass"],
+      "applies":["flask"]
     },
 	"15% of Damage Taken from Hits is Leeched as Life during Flask Effect":{
 		"tier": 0,
