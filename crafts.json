@@ -998,15 +998,30 @@
       "price": [4,"chaos"],
       "applies":["body"]
     },
-    "(21-28) chance to deal Double Damage while Focussed":{
+    "(29-36)% chance to deal Double Damage while Focussed":{
+      "tier": 3,
+      "price": [1,"div"],
+      "applies": ["2hm","2hr"]
+    },
+    "(15-18)% chance to deal Double Damage while Focussed":{
+      "tier": 3,
+      "price": [1,"div"],
+      "applies": ["1hm","1hr","shield"]
+    },
+    "(21-28)% chance to deal Double Damage while Focussed":{
       "tier": 2,
       "price": [2,"alch"],
       "applies": ["2hm","2hr"]
     },
-    "(11-14) chance to deal Double Damage while Focussed":{
+    "(11-14)% chance to deal Double Damage while Focussed":{
       "tier": 2,
       "price": [2,"alch"],
-      "applies": ["1hm","1hr"]
+      "applies": ["1hm","1hr","shield"]
+    },
+    "(21-28)% increased Attack and Cast Speed while Focussed":{
+      "tier": 2,
+      "price": [2,"alch"],
+      "applies": ["gloves"]
     },
     "(121-140)% increased Duration of Ailments you inflict while Focussed":{
       "tier": 2,
