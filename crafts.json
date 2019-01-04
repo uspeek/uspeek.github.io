@@ -567,14 +567,14 @@
       "price": [8, "gcp"],
       "applies": ["1hm","1hr","2hm","2hr","shield"]
     },
-    "Adds (11-13) to (14-16) Physical Damage<br/>35% chance to cause Bleeding on Hit":{
-      "tier": 3,
-      "price": [2, "alch"],
+    "Adds (14-16) to (17-20) Physical Damage<br/>40% chance to cause Bleeding on Hit":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["2hm","2hr"]
     },
-    "Adds (5-7) to (8-10) Physical Damage<br/>35% chance to cause Bleeding on Hit":{
-      "tier": 3,
-      "price": [2, "alch"],
+    "Adds (9-11) to (12-14) Physical Damage<br/>40% chance to cause Bleeding on Hit":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "Hits can't be Evaded":{
@@ -1053,10 +1053,15 @@
       "price": [3,"chaos"],
       "applies": ["amulet"]
     },
-    "(31-35)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
-      "tier": 2,
-      "price": [4,"chance"],
+    "(36-40)% increased Rarity of Items Dropped by Slain Rare or Unique Enemies":{
+      "tier": 3,
+      "price": [8,"chance"],
       "applies":["helm"]
+    },
+    "10% Chance to Trigger Level 18 Summon Spectral Wolf on Kill":{
+      "tier": 0,
+      "price": [3, "chaos"],
+      "applies": ["amulet"]
     },
     "(14-16)% increased Global Critical Strike Chance <br/> (21-23)% to Critical Strike Multiplier if you've Shattered an Enemy Recently":{
       "tier": 4,
