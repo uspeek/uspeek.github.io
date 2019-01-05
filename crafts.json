@@ -417,9 +417,9 @@
       "price": [4, "chaos"],
       "applies": ["boot"]
     },
-    "(13-16)% increased Movement Speed<br/>Cannot be Chilled":{
-      "tier": 2,
-      "price": [2, "alch"],
+    "(17-20)% increased Movement Speed<br/>Cannot be Chilled":{
+      "tier": 3,
+      "price": [4, "chaos"],
       "applies": ["boot"]
     },
     "(186-285) to Armour and Evasion Rating":{
