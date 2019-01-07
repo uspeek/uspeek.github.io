@@ -1052,6 +1052,11 @@
       "price": [8,"chance"],
       "applies":["helm"]
     },
+    "4% increased Attributes":{
+      "tier": 2,
+      "price": [4,"alt"],
+      "applies":["body"]
+    },
     "10% Chance to Trigger Level 18 Summon Spectral Wolf on Kill":{
       "tier": 0,
       "price": [3, "chaos"],
