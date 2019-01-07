@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---<link rel="stylesheet" href="../bootstrap.min.css"><!---->
+    <title>Filters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../craft.css">
+    <style>
+        .recipe {
+            padding: 3px;
+            border: 1px solid;
+        }
+        .boots{border-color:rgb(255,0,0);}
+        .body{border-color: rgb(0,128,0);}
+        .gloves{border-color:rgb(255,145,0);}
+        .helmets{border-color:rgb(0,178,255);}
+        .weaponl{border-color:rgb(151,0,130);font-size: 10pt;}
+        .weapons{border-color:rgb(255,0,220); }
+        .currency{
+            border: 1px solid rgb(210,178,135);
+            background: #000;
+            padding: 5px;
+        }
+        .chromatic{color: rgb(230,88,88);}
+        .pick{color: rgb(70,238,255);}
+        .nopick{color: rgb(210,178,135);}
+        .silver{color: rgb(210,178,135); border-color:rgb(100,100,255);}
+
+    </style>
+</head>
+<body>
+    <div class="container mt-2">
+        <h1>Something... PoE Filter</h1>
+        <p>Based on NeverSink Very Strict Blue. Softened (probably to the Strict or Semi-Strict level) and recoloured.</p>
+        <p>Idea was to have the filter with colours from NeverSink's 5.7 filter (Abyss-Bestiary league).</p>
+        <p>Low-tier currency colours (as I'm looking at them): <span class="currency silver">Silver Coin</span> <span class="currency chromatic">Chromatic Orb</span> <span class="currency pick">pick it up</span> <span class="currency nopick">pick it up if you want</span></p>
+        <p>Chaos/Regal recipe colours: <span class="recipe body">body armour</span> <span class="recipe boots">boots</span> <span class="recipe gloves">gloves</span> <span class="recipe helmets">helmets</span>  <span class="recipe weapons">small 1h and 2h weapons</span> <span class="recipe weaponl">large 2h weapons</span> affect only T3 and lower items. Use large weapons as last resort.</p>
+        <p>Recoloured scarabs for some reason.</p>
+        <p>Recoloured 6-sockets to be as higher tier currency.</p>
+        <p>20% Quality Flasks so you drink quality drinks. Stay healthy.</p>
+        <p>Everything else is just as in NeverSink Very Strict filter</p>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="./regular.png" alt="Regular">
+                <div class="card-body">
+                    <h5 class="card-title">Default version</h5>
+                    <p>Filter without highlighting Chromatic and Chaos recipe items</p>
+                    <a href="EG7.filter" class="card-link">Download</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./recipes.png" alt="Regular">
+                <div class="card-body">
+                    <h5 class="card-title">Chaos recipe version</h5>
+                    <p>Highlighted small (2x2, 1x3) Chromatic items</p>
+                    <p>Highlighted items for Chaos recipe</p>
+                    <a href="EG7c.filter" class="card-link">Download</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./filterblade.png" alt="Regular">
+                <div class="card-body">
+                    <h5 class="card-title">Customize in FilterBlade</h5>
+                    <p>Made in FilterBlade, remake-able in FilterBlade.</p>
+                    <p>Chromatic and Chaos recipes are disabled</p>
+                    <a href="http://www.filterblade.xyz/#V351MFUn2hKt" target="_blank" class="card-link">Customize</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container mt-2 text-center">
+    <a href="../">Crafting Serivce?</a>
+</div>
+</body>
+</html>

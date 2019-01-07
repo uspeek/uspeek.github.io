@@ -790,7 +790,7 @@
     "applies": ["amulet","quiver"]
   },
   "+(25-28)% to Critical Strike Multiplier":{
-    "tier": 2,
+    "tier": 3,
     "price": [4,"chaos"],
     "applies": ["1hm","1hr","2hm","2hr"],
     "locked":1
@@ -848,12 +848,6 @@
   "(9-12)% increased Trap Throwing/Mine Laying Speed":{
     "tier": 2,
     "price": [2,"alch"],
-    "applies": ["1hm","1hr","2hm","2hr"],
-    "locked":1
-  },
-  "(6-8)% increased Trap Throwing/Mine Laying Speed":{
-    "tier": 1,
-    "price": [6,"aug"],
     "applies": ["1hm","1hr","2hm","2hr"]
   }
 },

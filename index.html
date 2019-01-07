@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container collapse navbar-collapse navbar">
-            <a class="navbar-brand" href="./index.html">Uspeek's Crafting Service</a>
+            <a class="navbar-brand" href="./">Uspeek's Crafting Service</a>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump to</a>
@@ -34,9 +34,12 @@
             <form class="form-inline mx-0">
                 <input class="form-control mr-sm-2" id="searchform" type="search" placeholder="Search mods" aria-label="Search">
             </form>
-            <ul class="navbar-nav" id="classfilter">
-
-            </ul>
+            <div class="">
+                <div style="position: absolute; top: -5pt;">Filter by item class:</div>
+                <div>
+                    <ul class="navbar-nav" id="classfilter"></ul>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container-fluid" id="hideout">
@@ -73,7 +76,7 @@
             </thead>
             <tbody>
                 <tr id="meta">
-                    <td class="separator" colspan="3">Metacrafting</td>
+                    <td class="separator" colspan="3"><h4>Metacrafting</h4></td>
                 </tr>
                 <tr>
                     <td>2 <span class="price exa"></span></td>
@@ -100,30 +103,24 @@
                     <td>Prefixes Cannot Be Changed</td>
                     <td>Everything, Suffix</td>
                 </tr>
+                <tr id="prefix">
+                    <td class="separator" colspan="3"><h5>Prefixes</h5></td>
+                </tr>
+                <tr id="bprefix"></tr>
                 <tr id="prefixveil">
-                    <td class="separator" colspan="3">Veiled Prefixes</td>
+                    <td class="separator" colspan="3"><h5>Veiled Prefixes</h5></td>
                 </tr>
                 <tr id="bprefixveil"></tr>
+                <tr id="suffix">
+                    <td class="separator" colspan="3"><h5>Suffixes</h5></td>
+                </tr>
+                <tr id="bsuffix"></tr>
                 <tr id="suffixveil">
-                    <td class="separator" colspan="3">Veiled Suffixes</td>
+                    <td class="separator" colspan="3"><h5>Veiled Suffixes</h5></td>
                 </tr>
                 <tr id="bsuffixveil"></tr>
-				<tr id="prefix">
-                    <td class="separator" colspan="3">Default Prefixes</td>
-                </tr>
-				<tr>
-					<td class="text-center" colspan="3">By "Default" I consider mods that are unlocked from crafting recipes in different locations in 10 Acts and Maps.
-				</tr>
-                <tr id="bprefix"></tr>
-                <tr id="suffix">
-                    <td class="separator" colspan="3">Default Suffixes</td>
-                </tr>
-				<tr>
-					<td class="text-center" colspan="3">By "Default" I consider mods that are unlocked from crafting recipes in different locations in 10 Acts and Maps.
-				</tr>
-                <tr id="bsuffix"></tr>
                 <tr id="sockets">
-                    <td class="separator" colspan="3">Sockets, Links and Colours</td>
+                    <td class="separator" colspan="3"><h5>Sockets, Links and Colours</h5></td>
                 </tr>
                 <tr>
                     <td colspan="3">

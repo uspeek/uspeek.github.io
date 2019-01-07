@@ -18,14 +18,10 @@ let itemclass={
     "prefixveil":"Veiled Prefixes",
     "suffix":"Suffixes",
     "suffixveil":"Veiled Suffixes"
-},acr=[],cn=0,cf='';
-
-
-
+},acr=[],cn=0,cf='all',cm='all';
 $.each(itemclass,function(k,v){
     $("#classfilter").append('<li class="nav-item filtericon c'+k+'" data-filter="'+k+'" title="'+v+'"></li>');
 });
-
 $.getJSON("crafts.json", function(data){
     $.each(data, function(section,crafts){
         let crc=0;
@@ -50,7 +46,7 @@ $.getJSON("crafts.json", function(data){
                 '<td>'+att['price'][0]+' <span class="price '+att['price'][1]+'"></span></td>' +
                 '<td><span class="rank">'+tier+'</span>'+cr+warning+'</td>'+
                 '<td class="applies">'+icons+'</td></tr>';
-            acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:lcat[section]};
+            acr[cn]={value: section+crc, label: cr.replace("<br/>",". "),category:section};
             cn++;
             $("#b"+section).before(template);
         });
@@ -64,32 +60,13 @@ $("#jumpm a").click(function(){
     },500);
 });
 
-$("#searchform").click(function (){this.select();}).autocomplete({
-    source: acr,
-    minLength: 3,
-    focus: function(event,ui){
-        return false;
-    },
-    //position: { my: "left bottom", at: "left top", of: "#searchfield"},
-    select: function(event,ui) {
-        $('html, body').animate({
-            scrollTop: $('#' + ui.item.value).offset().top - 150
-        }, 500);
-        setTimeout(function(){
-            $('#' + ui.item.value).animate({backgroundColor:"#d4f0cd"},500).animate({backgroundColor:"none"},500);
-        },500);
-        $("#searchform").val('');
-        return false;
-    }
-});
-
 $("#qcp").click(function(){
     this.select();
     document.execCommand("copy");
     $(this).tooltip('show');
     setTimeout(function(){
         $("#qcp").tooltip('dispose');
-    },3000);
+    },1000);
 });
 $("#ho").click(function(){
     if($(this).hasClass("oi-arrow-thick-bottom")){
@@ -107,9 +84,9 @@ $('span[data-toggle="tooltip"]').tooltip({
     template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner" style="background:none;" ></div></div>'
 });
 
-function showhide(ic){
-    if(cf==ic){
-       ic='all';
+function filterbyclass(ic){
+    if(cf==ic || ic=='all'){
+        ic='all';
     }
     cf=ic;
     $.each(itemclass, function(k){
@@ -119,9 +96,19 @@ function showhide(ic){
             $(".c"+k).css("opacity",".25");
         }
     });
+}
+function filterbymod(mod){
+    mod=mod.toLowerCase();
+    if(mod.length>0) {
+        cm=mod;
+    }else{
+        cm='all';
+    }
+}
+function showhide(){
     $.each(acr,function(k,v){
         let cur="#"+v['value'];
-        if(($(cur).has("td li[data-filter='"+ic+"']")).length > 0 || ic=='all'){
+        if((($(cur).has("td li[data-filter='"+cf+"']")).length > 0 || cf=='all')&&(v['label'].toLowerCase().includes(cm) || cm=='all')){
             $(cur).css("display","");
         }else{
             $(cur).css("display","none");
@@ -129,6 +116,12 @@ function showhide(ic){
     });
 }
 
+$("#searchform").keyup(function(){
+    filterbymod($(this).val());
+    showhide();
+});
+
 $("#classfilter li").click(function(){
-    showhide($(this).data("filter"));
+    filterbyclass($(this).data("filter"));
+    showhide();
 });
