@@ -597,9 +597,9 @@
       "price": [4, "vaal"],
       "applies": ["1hm","1hr","shield"]
     },
-	"Gain 8% of Maximum Life as Extra Maximum Energy Shield":{
-		"tier": 2,
-		"price": [2,"alch"],
+	"Gain 10% of Maximum Life as Extra Maximum Energy Shield":{
+		"tier": 3,
+		"price": [4,"chaos"],
 		"applies":["body"]
 	},
     "(1-2)% of Physical Damage from Hits taken as Fire Damage":{
