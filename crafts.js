@@ -31,7 +31,7 @@ $.getJSON("crafts.json", function(data){
             if(att['applies'][0]=="!flasks"){
                 $.each(itemclass,function(k,v){
                     if(k!="flask"){
-                        icons+="<li class='filtericon c"+v+"' style='display: none;' data-filter='"+v+"' title='"+itemclass[v]+"'></li>";
+                        icons+="<li class='filtericon c"+k+"' style='display: none;' data-filter='"+k+"' title='"+itemclass[v]+"'></li>";
                     }
                 });
                 icons+="Everything except Flasks"
