@@ -467,7 +467,7 @@
       "price": [1, "div"],
       "applies": ["gloves"]
     },
-    "+1 to maximum nuymber of Zombies<br/>+1 to maximum number of Skeletons":{
+    "+1 to maximum number of Zombies<br/>+1 to maximum number of Skeletons":{
       "tier": 0,
       "price": [4,"chaos"],
       "applies": ["helm","body"]
