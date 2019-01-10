@@ -607,9 +607,9 @@
       "price": [3, "alt"],
       "applies": ["helm"]
     },
-    "40% chance to Avoid being Frozen":{
-      "tier": 1,
-      "price": [3, "aug"],
+    "60% chance to Avoid being Frozen":{
+      "tier": 2,
+      "price": [4, "alt"],
       "applies": ["boot"]
     },
     "(5-8)% increased maximum Life<br/>(5-8)% increased maximum Mana":{
@@ -1072,7 +1072,7 @@
       "price": [4,"chaos"],
       "applies":["ring"]
     },
-    "(11-13)% increased Global Physical Damage<br/>(11-13) increased Chaos Damage":{
+    "(11-13)% increased Global Physical Damage<br/>(11-13)% increased Chaos Damage":{
       "tier":3,
       "price":[2,"alch"],
       "applies":["ring"]
@@ -1177,9 +1177,9 @@
       "price": [2,"chaos"],
       "applies":["1hm","1hr","2hm","2hr","shield","helm","body","gloves","boot"]
     },
-    "1.5% of Life Regenerated per second during any Flask Effect":{
-      "tier": 2,
-      "price": [4,"alch"],
+    "2% of Life Regenerated per second during any Flask Effect":{
+      "tier": 3,
+      "price": [4,"chaos"],
       "applies":["belt"]
     },
     "(7-8)% increased Trap Throwing Speed":{

@@ -1773,24 +1773,24 @@ Show # $EGC->82 $x->Abyss->Jewel $Jewels->Rare
 	Rarity = Rare
 	Class "Abyss Jewel"
 	SetFontSize 45
+	SetTextColor 255 255 0 255           # TEXTCOLOR:	 Jewel Text
 	SetBorderColor 220 0 0 240           # BORDERCOLOR:	 Aspect High Potential
 	SetBackgroundColor 120 120 0 225     # BACKGROUND:	 Rare Jewel
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue
-SetTextColor 255 255 0 255
 
 Show # $EGC->82 $x->Abyss->Jewel $Jewels->Magic
 	ItemLevel >= 82
 	Rarity <= Magic
 	Class "Abyss Jewel"
 	SetFontSize 45
+	SetTextColor 0 100 255               # TEXTCOLOR:	 Jewel Magic
+	SetBorderColor 220 0 0 240           # BORDERCOLOR:	 Aspect High Potential
+	SetBackgroundColor 0 20 40 255       # BACKGROUND:	 Jewel Magic
 	PlayAlertSound 2 300                 # DROPSOUND:	 Currency Sound
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue
-SetTextColor 0 100 255
-SetBorderColor 220 0 0 239
-SetBackgroundColor 0 20 40 255
 
 Show # $x->Abyss->Jewel $Jewels->Rare
 	Rarity = Rare
@@ -1992,14 +1992,14 @@ Show # $x->Atlas->T2 $Rare->Tiny %TB-Atlas-Bases %D4
 # Example, to add Agate amulet:
 # BaseType "Sorcerer Boots"
 
-# Show 
-# BaseType "Glorious Plate" "Close Helmet"
-# Rarity Normal
-# SetFontSize 38
-# SetTextColor 255 255 255 255
-# SetBorderColor 0 210 0 210
-# PlayAlertSound 7 300
-# Corrupted False
+#Show 
+#	BaseType "Glorious Plate" "Close Helmet"
+#	Rarity Normal
+#	SetFontSize 38
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 0 210 0 210
+#	PlayAlertSound 7 300
+#	Corrupted False
 
 #Show 
 #	Corrupted False
@@ -2704,8 +2704,8 @@ Show # $Rare->T1 $Rare->Small %D4 %TB-RARE-T1-WepSmall %UP
 	BaseType "Imperial Claw" "Gemini Claw" "Imbued Wand" "Platinum Kris" "Jewelled Foil" "Spiraled Foil" "Corsair Sword"
 	SetFontSize 40
 	SetTextColor 255 190 0 255           # TEXTCOLOR:	 Rares - Level - 75+
+	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rare T1
-SetBorderColor 150 150 150
 
 Show 
 	ItemLevel >= 65
@@ -2713,8 +2713,8 @@ Show
 	BaseType "Imperial Claw" "Gemini Claw" "Imbued Wand" "Platinum Kris" "Jewelled Foil" "Spiraled Foil" "Corsair Sword"
 	SetFontSize 40
 	SetTextColor 255 255 119 255         # TEXTCOLOR:	 T2 Rare
+	SetBorderColor 150 150 150           # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 0 40 70 255       # BACKGROUND:	 Rare T1
-SetBorderColor 150 150 150
 
 Show # $Rare->T1 $Rare->Small  %D4 %TB-RARE-T1-ArmSmall %UP
 	ItemLevel >= 75
@@ -3736,6 +3736,7 @@ Show # $Gem->Level-19 %D4
 Show # $Gem->T2 %TB-DropOnly-Gem %D4
 	Class Gems
 	BaseType "Detonate Mines" "Added Chaos Damage" "Vaal" "Enhance"
+	SetFontSize 32
 	SetBorderColor 30 150 180 150        # BORDERCOLOR:	 Gem T3
 
 #------------------------------------
@@ -3858,6 +3859,18 @@ Show # $maps->elder->Top
 	PlayAlertSound 6 300                 # DROPSOUND:	 T0 Drop
 	MinimapIcon 0 Red Square
 	PlayEffect Red
+
+# FilterBlade: Conditional Entry
+Show 
+Class Maps
+SetFontSize 44
+MinimapIcon 1 Blue Square
+PlayEffect Brown
+BaseType "Iceberg Map" "Tower Map" "Terrace Map" "Dig Map" "Sunken City Map"
+PlayAlertSound 12 300
+SetBackgroundColor 255 255 255 255
+SetBorderColor 0 0 255 255
+SetTextColor 0 0 255 255
 
 Show # $maps->shaped->Top
 	ShapedMap True
