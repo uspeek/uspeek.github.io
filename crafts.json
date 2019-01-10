@@ -297,14 +297,14 @@
       "price": [8, "chaos"],
       "applies": ["1hm","1hr"]
     },
-    "(64-72)% increased Cold Damage<br/>(18-20)% chance to Freeze":{
-      "tier": 3,
-      "price": [3, "chaos"],
+    "(73-80)% increased Cold Damage<br/>(21-23)% chance to Freeze":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["2hm","2hr"]
     },
-    "(37-44)% increased Cold Damage<br/>(8-9)% chance to Freeze":{
-      "tier": 3,
-      "price": [3, "chaos"],
+    "(45-52)% increased Cold Damage<br/>(10-11)% chance to Freeze":{
+      "tier": 4,
+      "price": [8, "chaos"],
       "applies": ["1hm","1hr"]
     },
     "(73-80)% increased Lightning Damage<br/>(21-23)% chance to Shock":{
@@ -582,9 +582,9 @@
       "price":[3,"exa"],
       "applies": ["1hm","2hm"]
     },
-    "(19-23)% increased Damage during any Flask Effect":{
-      "tier": 3,
-      "price": [2, "alch"],
+    "(24-28)% increased Damage during any Flask Effect":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["gloves"]
     },
     "Gain (11-14)% of Non-Chaos Damage as extra Chaos Damage":{
@@ -896,6 +896,11 @@
       "tier":3,
       "price": [3,"chaos"],
       "applies":["amulet"]
+    },
+    "(6-8) increased Cooldown Recovery Speed":{
+      "tier": 1,
+      "price": [2,"chaos"],
+      "applies": ["belt"]
     },
     "(5-6)% increased Damage per Frenzy/Power/Endurance Charge":{
       "tier": 0,
