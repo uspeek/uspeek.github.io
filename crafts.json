@@ -602,9 +602,9 @@
 		"price": [4,"chaos"],
 		"applies":["body"]
 	},
-    "(1-2)% of Physical Damage from Hits taken as Fire Damage":{
-      "tier": 1,
-      "price": [3, "alt"],
+    "(5-6)% of Physical Damage from Hits taken as Fire Damage":{
+      "tier": 3,
+      "price": [2, "chaos"],
       "applies": ["helm"]
     },
     "60% chance to Avoid being Frozen":{
