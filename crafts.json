@@ -607,9 +607,9 @@
       "price": [2, "chaos"],
       "applies": ["helm"]
     },
-    "60% chance to Avoid being Frozen":{
-      "tier": 2,
-      "price": [4, "alt"],
+    "Cannot be Frozen":{
+      "tier": 4,
+      "price": [4, "chaos"],
       "applies": ["boot"]
     },
     "(5-8)% increased maximum Life<br/>(5-8)% increased maximum Mana":{
