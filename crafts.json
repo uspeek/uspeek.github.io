@@ -1087,6 +1087,11 @@
       "price":[6,"glass"],
       "applies":["flask"]
     },
+    "(60-80)% increased Critical Strike Chance during Flask Effect":{
+      "tier": 0,
+      "price":[6,"glass"],
+      "applies":["flask"]
+    },
 	"15% of Damage Taken from Hits is Leeched as Life during Flask Effect":{
 		"tier": 0,
 		"price": [6, "glass"],
