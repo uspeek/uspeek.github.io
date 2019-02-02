@@ -1187,9 +1187,9 @@
       "price": [4,"chaos"],
       "applies":["belt"]
     },
-    "(7-8)% increased Trap Throwing Speed":{
-      "tier": 1,
-      "price": [3,"aug"],
+    "(9-10)% increased Trap Throwing Speed":{
+      "tier": 2,
+      "price": [2,"alch"],
       "applies":["amulet","belt"]
     },
     "(11-12)% increased Mine Laying Speed":{
