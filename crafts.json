@@ -477,6 +477,11 @@
       "price": [3, "exa"],
       "applies": ["body"]
     },
+    "+1 to maximum number of Summoned Totems":{
+      "tier": 0,
+      "price": [2, "exa"],
+      "applies": ["shield"]
+    },
     "(2001-3000) to Armour during Soul Gain Prevention":{
       "tier": 4,
       "price": [4, "vaal"],
