@@ -922,6 +922,11 @@
       "price": [2,"regal"],
       "applies":["boot","amulet"]
     },
+    "(8-10)% increased Effect of your Curses":{
+      "tier": 2,
+      "price": [1,"exa"],
+      "applies":["shield"]
+    },
     "(5-7)% increased Effect of your Curses":{
       "tier": 1,
       "price": [2,"chaos"],
