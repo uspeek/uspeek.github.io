@@ -552,6 +552,11 @@
       "price": [3, "chaos"],
       "applies": ["ring","amulet"]
     },
+    "(37-43)% increased Damage while Leeching":{
+      "tier": 4,
+      "price": [1, "exa"],
+      "applies": ["gloves","amulet"]
+    },
     "(31-36)% increased Damage while Leeching":{
       "tier": 3,
       "price": [3, "chaos"],
@@ -967,9 +972,9 @@
       "price": [4, "chaos"],
       "applies":["body","belt"]
     },
-    "(13-14)% increased Global Critical Strike Chance<br/>(17-19)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
-      "tier": 3,
-      "price": [2,"alch"],
+    "(15-16)% increased Global Critical Strike Chance<br/>(20-22)% increased Elemental Damage if you've dealt a Critical Strike Recently":{
+      "tier": 4,
+      "price": [4,"chaos"],
       "applies":["gloves","quiver"]
     },
 	"(24-30)% increased Totem Placement speed":{
