@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---><link rel="stylesheet" href="bootstrap.min.css"><!---->
+    <title>Apex Legends FPS stuff</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        .lesel {color:red;}
+        .lgr {color:green;text-decoration: underline dotted;}
+    </style>
+</head>
+<body>
+<div class="container mt-2">
+    <h1>Apex Legends FPS stuff and such.</h1>
+    <p>Full guides:</p>
+    <ul>
+        <li><a href="https://old.reddit.com/r/lowspecgamer/comments/aoa77r/apex_legends_fps_boost_configs_launch_options/" target="_blank">Apex Legends FPS Boost Configs + Launch Options</a> by u/powerchopper</li>
+        <li><a href="https://old.reddit.com/r/lowspecgamer/comments/aoepyf/apex_legends_radical_custom_resolution_approach/" target="_blank">Apex Legends: Radical custom resolution approach for framerate fetishists</a> by u/DastardlyCoxcomb</li>
+    </ul>
+    <p>These guides could be updated and could have more info in the comments. Settings below is what I use.</p>
+    <p>Hover over <abbr title="just like this one" class="lesel">red text</abbr> for notes.</p>
+    <h2>Launch Options</h2>
+    <p>Origin → My Game Library → Right-click Apex Legends → Game Properties → Advanced Launch Options</p>
+    <p class="text-monospace">+exec autoexec <abbr title="Change to your refresh rate or remove completely" class="lesel">-refresh 120</abbr> -preload <abbr title="Change to your amount of threads or remove completely" class="lesel">-threads 16</abbr> -forcenovsync -fullscreen -novid</p>
+    <h2>autoexec.cfg</h2>
+    <p><span class="lgr">Apex Installation Folder</span>\cfg\autoexec.cfg</p>
+    <p class="text-monospace">fps_max <abbr title="Set to refresh rate +1. OR set to 0 to remove FPS limit" class="lesel">121</abbr><br/>
+        cl_forcepreload 1<br/>
+        mat_copressedtextures 1<br/>
+        cl_ragdoll_collide 0</p>
+    <h2>videoconfig.txt</h2>
+    <p>C:\Users\<span class="lgr">Your username</span>\Saved Games\Respawn\Apex\local\videoconfig.txt</p>
+    <pre>
+"VideoConfig"
+{
+	"setting.cl_gib_allow"		"0"
+	"setting.cl_particle_fallback_base"		"3"
+	"setting.cl_particle_fallback_multiplier"		"2"
+	"setting.cl_ragdoll_maxcount"		"0"
+	"setting.cl_ragdoll_self_collision"		"1"
+	"setting.mat_depthfeather_enable"		"0"
+	"setting.mat_forceaniso"		"1"
+	"setting.mat_mip_linear"		"0"
+	"setting.stream_memory"		"<abbr class="lesel" title="Leave from your existing settings">1509949</abbr>"
+	"setting.mat_picmip"		"0"
+	"setting.particle_cpu_level"		"0"
+	"setting.r_createmodeldecals"		"0"
+	"setting.r_decals"		"0"
+	"setting.r_lod_switch_scale"		"<abbr class="lesel" title="Adjust between 0.0 and 0.6, details below">0.350000</abbr>"
+	"setting.shadow_enable"		"0"
+	"setting.shadow_depth_dimen_min"		"0"
+	"setting.shadow_depth_upres_factor_max"		"0"
+	"setting.shadow_maxdynamic"		"0"
+	"setting.ssao_enabled"		"0"
+	"setting.ssao_downsample"		"3"
+	"setting.modeldecals_forceAllowed"		"1"
+	"setting.dvs_enable"		"<abbr class="lesel" title="Set to 1 for dynamic resolution (blurry picture, more fps)">0</abbr>"
+	"setting.dvs_gpuframetime_min"		"<abbr class="lesel" title="Set to 1 if changed dvs_enable above">15000</abbr>"
+	"setting.dvs_gpuframetime_max"		"<abbr class="lesel" title="Set to 1 if changed dvs_enable above">16500</abbr>"
+	"setting.defaultres"		    "<abbr class="lesel" title="Change to your resolution X">1920</abbr>"
+	"setting.defaultresheight"		"<abbr class="lesel" title="Change to your resolution Y">1080</abbr>"
+	"setting.fullscreen"		"1"
+	"setting.nowindowborder"		"0"
+	"setting.volumetric_lighting"		"0"
+	"setting.mat_vsync_mode"		"0"
+	"setting.mat_backbuffer_count"		"1"
+	"setting.mat_antialias_mode"		"0"
+	"setting.csm_enabled"		"1"
+	"setting.csm_coverage"		"1"
+	"setting.csm_cascade_res"		"512"
+	"setting.fadeDistScale"		"1.000000"
+	"setting.dvs_supersample_enable"		"0"
+	"setting.gamma"		"1.000000"
+	"setting.configversion"		"7"
+}
+    </pre>
+    <p>* r_lod_switch_scale - changes distance of LOD models/textures. 0.6 is default value. 0.0 gives most FPS but <b>almost unplayable</b> - unrecognizable pickups, some rocks aren't visible etc. 0.35 still gives somewhat noticeable switches between normal and LOD textures.</p>
+</div>
+</body>
+</html>
