@@ -14,11 +14,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div class="container mt-5 text-center" >
-       <p><a href="./poe/">PoE Crafting stuff</a> (Outdated from Betrayal)</p>
-       <p><a href="./apex/">Apex Legends FPS stuff</a></p>
-       <p><a href="./csgo/">CS:GO Configs and KZTimer</a></p>
-       <p><a href="https://twitch.tv/uspk">Twitch</a> - <a href="https://www.frankerfacez.com/channel/uspk" target="_blank">FFZ Emotes</a> - <a href="bttv.html">BTTV GIF Emotes</a></p>
-   </div>
+<div class="container w-25 mt-5 text-center" >
+    <h3>BetterTTV GIF Emotes:</h3>
+    <div class="d-flex justify-content-around mt-3 mb-5" id="bttvemotes"></div>
+    <h3>FrankerFaceZ Emotes:</h3>
+    <div class="d-flex justify-content-around mt-3 flex-wrap" id="ffzemotes"></div>
+    <a href="index.html" class="mt-5"><-</a>
+</div>
+<script type="text/javascript">
+  $.ajax({
+      url: 'https://api.betterttv.net/2/channels/uspk',
+      type: 'GET',
+      success: function(data){
+          $.each(data.emotes, function(i,o){
+              $("#bttvemotes").append("<div><img src='https://cdn.betterttv.net/emote/"+o['id']+"/2x'><p>"+o['code']+"</p></div>");
+          })
+      }
+  });
+  $.ajax({
+      url: 'https://api.frankerfacez.com/v1/room/id/35768723',
+      type: 'GET',
+      success: function(data){
+          console.log(data);
+          $.each(data.sets['121343'].emoticons, function(i,o){
+              $("#ffzemotes").append("<div><img src='"+o['urls'][1]+"'><p>"+o['name']+"</p></div>");
+          })
+      }
+  })
+</script>
 </body>
 </html>
